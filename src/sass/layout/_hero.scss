@@ -1,5 +1,29 @@
 .hero {
-  background-color: var(--primary-bg-color);
+  background-color: #ffb8ca;
+  // var(--primary-bg-color);
+}
+
+.hero__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  & span {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #d41443;
+  }
 }
 
 // mobile
@@ -14,5 +38,9 @@
 @media screen and (min-width: 1200px) {
   .hero__top {
     padding-top: 171px;
+  }
+
+  .hero__title {
+    width: 277px;
   }
 }
