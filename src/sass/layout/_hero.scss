@@ -1,18 +1,18 @@
+.hero {
+  background-color: var(--primary-bg-color);
+}
+
+// mobile
 @media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    margin: 0 auto;
-  }
 }
 
+// tablet
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
 }
 
+// desktop
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
+  .hero__top {
+    padding-top: 171px;
   }
 }
