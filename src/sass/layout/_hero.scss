@@ -4,29 +4,21 @@
 }
 
 .hero__top {
-  outline: 1px solid teal;
   display: flex;
   justify-content: space-between;
+  outline: 1px solid teal;
 }
 
 .hero__title {
   font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
-
+  font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
 
   & span {
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-
     line-height: 0.9;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: #d41443;
   }
 }
@@ -40,7 +32,7 @@
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
-  font-size: 46px;
+
   line-height: 1.15;
   text-align: right;
   letter-spacing: 0.04em;
@@ -51,9 +43,22 @@
 .hero__buttons-list {
   display: flex;
 }
-
+// and (min-width: 480px)
 // mobile
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
+  .hero__top {
+    display: flex;
+    padding-top: 193px;
+  }
+
+  .hero__title {
+    width: 218px;
+    font-size: 26px;
+
+    & span {
+      font-size: 48px;
+    }
+  }
 }
 
 // tablet
@@ -70,6 +75,10 @@
       font-size: 34px;
     }
   }
+
+  .hero__numbers-text {
+    font-size: 28px;
+  }
 }
 
 // desktop
@@ -85,5 +94,9 @@
     & span {
       font-size: 58px;
     }
+  }
+
+  .hero__numbers-text {
+    font-size: 46px;
   }
 }
