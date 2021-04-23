@@ -77,10 +77,10 @@
   cursor: pointer;
 }
 
-.hero__circle {
-  position: absolute;
-  z-index: -1;
-}
+// .hero__circle {
+//   position: absolute;
+//   z-index: -1;
+// }
 //   left: 273px;
 //   top: 31px;
 //   width: 538px;
@@ -127,7 +127,8 @@
   .hero__circle {
     position: absolute;
     z-index: -1;
-    left: 12vw;
+    left: 12%;
+    // right: -20vw;
     top: 83px;
     width: 346px;
     height: 344px;
@@ -216,6 +217,25 @@
     height: 322px;
     border-radius: 50%;
     background: #ffa5ba;
+  }
+
+  .hero__text {
+    display: inline-block;
+  }
+  .hero__text-item p {
+    // position: absolute;
+    margin-left: 154px;
+    margin-top: 66px;
+    width: 114px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 150%;
+    /* or 12px */
+
+    color: #ffffff;
+    outline: 1px solid blue;
   }
 }
 //-------------------------------------desktop-----------------
