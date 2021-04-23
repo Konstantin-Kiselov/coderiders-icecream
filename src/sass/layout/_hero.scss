@@ -151,6 +151,10 @@
     margin-top: 25px;
   }
 
+  .hero__buttons-item {
+    margin-right: 15px;
+  }
+
   .hero__btn {
     font-size: 14px;
     line-height: 1.29;
@@ -163,6 +167,12 @@
     border-radius: 20px;
     background: #d41443;
     color: #ffffff;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      background: #c7133e;
+    }
   }
 
   .hero__btn2 {
@@ -177,5 +187,10 @@
     border-radius: 20px;
     background: #ffffff;
     color: #d41443;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      background: #ecebeb;
+    }
   }
 }
