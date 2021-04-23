@@ -10,29 +10,27 @@
 }
 
 .hero__title {
+  color: #ffffff;
   font-family: Titan One;
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
 
   & span {
-    line-height: 0.9;
     color: #d41443;
+    line-height: 0.9;
   }
 }
 
 .hero__numbers-text {
+  color: #d41443;
   font-family: Titan One;
-  font-style: normal;
   font-weight: normal;
-
   line-height: 1.15;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
 }
 
 .hero__buttons-list {
@@ -44,6 +42,10 @@
 }
 
 .hero__btn {
+  border: 0;
+  border-radius: 20px;
+  background: #d41443;
+  color: #ffffff;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
@@ -54,13 +56,13 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
-  border: 0;
-  border-radius: 20px;
-  background: #d41443;
-  color: #ffffff;
 }
 
 .hero__btn2 {
+  border: 0;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #d41443;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
@@ -71,10 +73,6 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
-  border: 0;
-  border-radius: 20px;
-  background: #ffffff;
-  color: #d41443;
 }
 
 // and (min-width: 480px)
@@ -118,8 +116,43 @@
     }
   }
 
+  .hero__numbers-item {
+    width: 43px;
+    outline: 1px solid green;
+  }
+
   .hero__numbers-text {
+    position: relative;
+    z-index: 3;
+    color: #d41443;
     font-size: 28px;
+    line-height: 1.14;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -14px;
+      top: 0;
+      border-radius: 16px;
+      background-color: #ffffff;
+      z-index: -1;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+
+  .hero__numbers-title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: #ffffff;
   }
 
   .hero__buttons {
@@ -148,7 +181,17 @@
   }
 
   .hero__numbers-text {
-    font-size: 46px;
+    // font-size: 46px;
+    line-height: 1.15;
+    &::after {
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 16px;
+      top: 0;
+      border-radius: 16px;
+    }
   }
 
   .hero__buttons {
@@ -160,6 +203,11 @@
   }
 
   .hero__btn {
+    border: 0;
+    border-radius: 20px;
+    background: #d41443;
+    color: #ffffff;
+    outline: none;
     font-size: 14px;
     line-height: 1.29;
     min-width: 102px;
@@ -167,11 +215,6 @@
     align-items: center;
     text-align: center;
     cursor: pointer;
-    border: 0;
-    border-radius: 20px;
-    background: #d41443;
-    color: #ffffff;
-    outline: none;
     transition: all 0.2s ease-in-out;
     &:hover {
       transform: scale(1.1);
