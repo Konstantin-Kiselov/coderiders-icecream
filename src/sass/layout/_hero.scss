@@ -1,4 +1,5 @@
 .hero {
+  z-index: -10;
   background-color: #ffb8ca;
   // var(--primary-bg-color);
 }
@@ -73,6 +74,19 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
+}
+
+.hero__circle {
+  position: absolute;
+  z-index: 0;
+  left: 273px;
+  top: 31px;
+  width: 538px;
+  height: 538px;
+  left: 37%;
+  top: 52px;
+  border-radius: 50%;
+  background: #ffa5ba;
 }
 
 // and (min-width: 480px)
@@ -167,6 +181,10 @@
 
 // desktop
 @media screen and (min-width: 1200px) {
+  .hero {
+    height: 665px;
+  }
+
   .hero__top {
     padding-top: 171px;
   }
@@ -188,7 +206,7 @@
       position: absolute;
       width: 30px;
       height: 30px;
-      left: 16px;
+      left: 13px;
       top: 0;
       border-radius: 16px;
     }
@@ -196,6 +214,7 @@
 
   .hero__buttons {
     margin-top: 25px;
+    outline: 1px solid tomato;
   }
 
   .hero__buttons-item {
