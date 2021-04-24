@@ -44,7 +44,7 @@
   position: relative;
   &::before {
     content: '';
-    background: url(../images/Icecream/mobile-home-pic1.png);
+    background: url(../images/mobile/products/products-1.png);
     width: 249px;
     height: 252px;
     position: absolute;
@@ -57,7 +57,7 @@
   position: relative;
   &::before {
     content: '';
-    background: url(../images/Icecream/mobile-home-pic2.png);
+    background: url(../images/mobile/products/products-2.png);
     width: 249px;
     height: 252px;
     position: absolute;
@@ -70,7 +70,7 @@
   position: relative;
   &::before {
     content: '';
-    background: url(../images/Icecream/mobile-home-pic3.png);
+    background: url(../images/mobile/products/products-3.png);
     width: 249px;
     height: 252px;
     position: absolute;
@@ -115,7 +115,7 @@
 
 .product__box::after {
   content: '';
-  background: url(../images/Icecream/Group4.png);
+  background: url(../images/mobile/products/group4.png);
   width: 26px;
   height: 6px;
   bottom: 53%;
@@ -169,7 +169,7 @@
 
     &:first-child::before {
       content: '';
-      background: url(../images/Icecream/tablet-home-pic1.png);
+      background: url(../images/tablet/products/products-1.png);
       width: 220px;
       height: 226px;
       position: absolute;
@@ -178,7 +178,7 @@
     }
     &:nth-child(even):before {
       content: '';
-      background: url(../images/Icecream/tablet-home-pic2.png);
+      background: url(../images/tablet/products/products-2.png);
       width: 220px;
       height: 233px;
       position: absolute;
@@ -187,7 +187,7 @@
     }
     &:last-child:before {
       content: '';
-      background: url(../images/Icecream/tablet-home-pic3.png);
+      background: url(../images/tablet/products/products-3.png);
       width: 220px;
       height: 224px;
       position: absolute;
@@ -201,7 +201,7 @@
   }
   .product__box::after {
     content: '';
-    background: url(../images/Icecream/Group4.png);
+    background: url(../images/mobile/products/group4.png);
     width: 26px;
     height: 6px;
     bottom: 53%;
@@ -230,7 +230,7 @@
 
     &:first-child:before {
       content: '';
-      background: url(../images/Icecream/home-pic1.png);
+      background: url(../images/desktop/products/products-1.png);
       width: 335px;
       height: 335px;
       position: absolute;
@@ -239,7 +239,7 @@
     }
     &:nth-child(even):before {
       content: '';
-      background: url(../images/Icecream/home-pic2.png);
+      background: url(../images/desktop/products/products-2.png);
       width: 335px;
       height: 335px;
       position: absolute;
@@ -248,7 +248,7 @@
     }
     &:last-child:before {
       content: '';
-      background: url(../images/Icecream/home-pic3.png);
+      background: url(../images/desktop/products/products-3.png);
       width: 335px;
       height: 335px;
       position: absolute;
@@ -262,7 +262,7 @@
   }
   .product__box::after {
     content: '';
-    background: url(../images/Icecream/Group4.png);
+    background: url(../images/mobile/products/group4.png);
     width: 26px;
     height: 6px;
     bottom: 55%;
