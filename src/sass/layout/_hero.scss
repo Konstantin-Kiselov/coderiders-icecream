@@ -1,3 +1,50 @@
+.hero {
+  background-color: #ffb8ca;
+}
+
+.hero__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  & span {
+    font-size: 48px;
+    line-height: 0.96;
+    color: #d41443;
+  }
+}
+
+// ------------------------mobile----------------------
+@media screen and (min-width: 480px) {
+  .hero {
+    position: relative;
+    min-width: 320px;
+    height: 502px;
+  }
+
+  .hero__top {
+    padding-top: 192px;
+  }
+
+  .hero__title {
+    width: 218px;
+  }
+
+  .hero__numbers {
+    visibility: hidden;
+  }
+}
+
 // .hero {
 //   position: relative;
 //   padding-top: 193px;
@@ -322,7 +369,7 @@
 
 //   .hero__circle {
 //     left: 37vw;
-    
+
 //     top: 52px;
 //     width: 538px;
 //     height: 538px;
