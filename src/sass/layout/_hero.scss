@@ -90,6 +90,7 @@
   width: 171px;
   height: 410px;
   background-image: url(../images/demo.jpg);
+  // url(..src/images/mobile/header/header-1.png);
 }
 
 .hero__buttons {
@@ -110,6 +111,15 @@
   .hero {
     min-width: 320px;
     height: 502px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero__icecream {
+      background-image: url(..src/images/mobile/header/header-1.png);
+      // background-size: 100% auto;
+    }
   }
 }
 
