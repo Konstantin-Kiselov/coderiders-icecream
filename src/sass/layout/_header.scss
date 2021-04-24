@@ -4,13 +4,12 @@
 
 .header__button {
   display: none;
-  /*margin-top: 0;
-  margin-bottom: 0;*/
 }
 
 .header__wripper {
   padding-top: 6px;
   background: #ffb8ca;
+  width: 100%;
 }
 
 .header__container {
@@ -60,6 +59,8 @@
 
   .header__wripper {
     padding-top: 38px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   .container__button {
@@ -72,6 +73,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .header__wripper {
+    padding-left: 46px;
+    padding-right: 115px;
+  }
+
   .burger {
     display: none;
   }
