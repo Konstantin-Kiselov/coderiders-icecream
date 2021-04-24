@@ -3,6 +3,7 @@
   z-index: -10;
   background-color: #ffb8ca;
   overflow: hidden;
+  height: 502px;
 }
 
 .hero__top {
@@ -38,6 +39,7 @@
 }
 
 .hero__btn {
+  text-decoration: none;
   border: 0;
   border-radius: 20px;
   background: #d41443;
@@ -69,6 +71,7 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hero__circle {
@@ -89,7 +92,6 @@
   top: 92px;
   width: 171px;
   height: 410px;
-  background-image: url(./images/mobile/header/header-1.png);
 }
 
 .hero__buttons {
@@ -109,15 +111,5 @@
 @media screen and (min-width: 480px) {
   .hero {
     min-width: 320px;
-    height: 502px;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .hero__icecream {
-      background-image: url(./images/mobile/header/header-1@2x.png);
-      // background-size: 100% auto;
-    }
   }
 }
