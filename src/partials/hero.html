@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" id="aboutus">
   <div class="container">
     <!--Херо тайтл-->
     <div class="hero__top">
@@ -27,7 +27,7 @@
     <div class="hero__buttons">
       <ul class="hero__buttons-list list">
         <li class="hero__buttons-item">
-          <button class="hero__btn" type="button">Products</button>
+          <a href="https://www.w3docs.com/" class="hero__btn">Products</a>
         </li>
 
         <li>
@@ -38,7 +38,50 @@
 
     <!--Hero center and ice cream image-->
     <div class="hero__circle"></div>
-    <div class="hero__icecream"></div>
+    <div class="hero__icecream">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/header/webp/header-1.webp    1x,
+            ./images/desktop/header/webp/header-1@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/header/header-1.png    1x,
+            ./images/desktop/header/header-1@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/header/webp/header-1.webp    1x,
+            ./images/tablet/header/webp/header-1@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/tablet/header/header-1.png 1x, ./images/tablet/header/header-1@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/header/webp/header-1.webp    1x,
+            ./images/mobile/header/webp/header-1@2x.webp 2x
+          "
+          media="(max-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/mobile/header/header-1.png 1x, ./images/mobile/header/header-1@2x.png 2x"
+          media="(max-width: 768px)"
+        />
+        <img src="./images/tablet/header/header-1.png" alt="Ice cream central photo" />
+      </picture>
+    </div>
 
     <!--Hero text and round link-->
     <div class="hero__text">
@@ -62,3 +105,4 @@
     </div>
   </div>
 </section>
+<p id="products"></p>
