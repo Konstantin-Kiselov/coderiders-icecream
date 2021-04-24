@@ -1,9 +1,16 @@
-.hero {
-  position: relative;
-  z-index: -10;
+.hero-section {
+  z-index: -1;
   background-color: #ffb8ca;
+  background-size: 100%;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
   height: 502px;
+  min-width: 320px;
+
+  & .container {
+    position: relative;
+  }
 }
 
 .hero__top {
@@ -15,6 +22,7 @@
 //---Заголовок Ice cream made with passion----
 .hero__title {
   width: 218px;
+  z-index: 3;
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -31,7 +39,9 @@
 }
 
 .hero__buttons-list {
+  position: absolute;
   display: flex;
+  z-index: 6;
 }
 
 .hero__numbers {
@@ -41,6 +51,7 @@
 .hero__btn {
   text-decoration: none;
   border: 0;
+  z-index: 5;
   border-radius: 20px;
   background: #d41443;
   color: #ffffff;
@@ -58,6 +69,7 @@
 
 .hero__btn2 {
   border: 0;
+  z-index: 4;
   border-radius: 20px;
   background: #ffffff;
   color: #d41443;
@@ -76,7 +88,7 @@
 
 .hero__circle {
   position: absolute;
-  z-index: -2;
+  z-index: 1;
   left: 36px;
   top: 83px;
   width: 346px;
@@ -87,7 +99,7 @@
 
 .hero__icecream {
   position: absolute;
-  z-index: -1;
+  z-index: 2;
   left: 117px;
   top: 92px;
   width: 171px;
@@ -109,7 +121,7 @@
 
 // ------------------------mobile----------------------
 @media screen and (min-width: 480px) {
-  .hero {
+  .hero-section {
     min-width: 320px;
   }
 }
