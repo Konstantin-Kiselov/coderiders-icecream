@@ -89,7 +89,7 @@
   top: 92px;
   width: 171px;
   height: 410px;
-  background-image: url(..src/images/mobile/header/header-1.png);
+  background-image: url(./images/mobile/header/header-1.png);
 }
 
 .hero__buttons {
@@ -116,7 +116,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero__icecream {
-      background-image: url(..src/images/mobile/header/header-1@2x.png);
+      background-image: url(./images/mobile/header/header-1@2x.png);
       // background-size: 100% auto;
     }
   }
