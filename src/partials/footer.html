@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <footer class="footer">
+        <div class="footer__container container">
+           <p class="footer__title">homemade ice cream made
+               <span class="footer__text">with passion</span>
+           </p>
+        </div>
+        <div class="footer__contact">
+           <ul class="footer__list list">
+               <li class="footer__item">
+                <a href="https://github.com/" target="_blank" rel="noreferrer noopener"
+                 class="footer__link link">
+                    <svg class="footer__icon" width="" height="">
+                        <use href="./images/sprite.svg#github"></use>
+                    </svg>
+                </a>
+               </li>
+               <li class="footer__item">
+                <a href="https://web.telegram.org/" target="_blank" rel="noreferrer noopener"
+                 class="footer__link link">
+                    <svg class="footer__icon" width="" height="">
+                        <use href="./images/sprite.svg#telegram"></use>
+                    </svg>
+                </a>
+               </li>
+               <li class="footer__item">
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
+                 class="footer__link link">
+                    <svg class="footer__icon" width="" height="">
+                        <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+               </li>
+           </ul>
+           <p class="footer__tel">Feel free to contact
+            <a class="footer__tel-link link" href="tel=+610383766284">
+                +61 (0) 383 766 284</a></p>
+        </div>
+        <div class="footer__info">
+           <p class="footer_info-min">---</p>
+           <p class="fotter__info-max">© 2019 - IceCream. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+  </body>
+</html>
