@@ -1,0 +1,275 @@
+.footer {
+  background-color:#FFF5F6;
+}
+
+.footer__box {
+  padding-top: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 17px;
+  max-width: 234px;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: .04em;
+  text-align: left;
+  text-transform: uppercase;
+
+  color: #FFA5BA;
+
+  animation-duration: 1000ms;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 43px;
+  max-width: 234px;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: .04em;
+  text-align: left;
+  text-transform: uppercase;
+
+   color: #D41443;
+
+   animation-duration: 1700ms;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 43px;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 230px;
+  margin-left: auto;
+
+}
+
+.footer__contact ul li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer__contact ul a {
+  border-radius: 50%;
+  background: #fea5bb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  transition: background-color 250ms 
+         cubic-bezier(0.4, 0, 0.2, 1),
+         color 250ms 
+         cubic-bezier(0.4, 0, 0.2, 1);
+        
+}
+
+.footer__link:hover,
+.footer__link:focus {
+   background-color: #D41443;
+   color: #FFF;
+  
+}
+
+.footer__icon {
+  fill: #fff;
+}
+
+.footer__tel {
+  display: block;
+  margin-top: 46px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: #000;
+  font-size: 12px;
+  text-align: right;
+
+  animation-duration: 1000ms;
+}
+
+.footer__tel-link {
+  text-align: right;
+  color: #D41443;
+  
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 22px 0;
+  letter-spacing: .02em;
+  align-items: center;
+  border-top: 1px solid #e1e1e1;
+}
+
+.footer__info-max {
+  display: none;
+}
+
+.footer__info-min {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  color: #907E82;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+
+   .container {
+     padding-left: 36px;
+     padding-right: 36px;
+   }
+
+
+   .footer__box {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 91px 36px;
+     align-items: start;
+   }
+
+   .footer__title {
+    max-width: 340px;
+    font-size: 26px;
+    line-height: 1.153;
+    letter-spacing: .04em;
+    margin-bottom: 23px;
+    animation-duration: 1000ms;
+   }
+   
+   .footer__text {
+    font-size: 48px;
+    line-height: 1.145;
+    letter-spacing: .06em;
+    margin-bottom: 0;
+    animation-duration: 1700ms;
+   }
+
+   .footer__contact ul li:not(:last-child) {
+    margin-right: 30px;
+  } 
+
+  .footer__contact {
+    padding-bottom: 0;
+  }
+
+   .footer__tel {
+      font-size: 14px;
+      animation-duration: 1000ms;
+   }
+
+   .footer__info {
+     padding: 0;
+   }
+
+   .footer__info-min {
+     display: none;
+   }
+
+   .footer__info-max {
+     display: initial;
+     font-family: DM Sans;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 186%;
+     letter-spacing: 0.02em;
+     padding-top: 24px;
+     padding-bottom: 18px;
+
+
+     color: #907E82;
+   }
+
+}   
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+
+  .container {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  .footer__box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-title__container {
+    min-width: 474px;
+  }
+  
+  .footer__title {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    max-width: 474px;
+    margin-bottom: 15px;
+
+    color: #FFA5BA;
+    animation-duration: 1000ms;
+  }
+
+  .footer__text {
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 474px;
+    animation-duration: 1700ms;
+    
+  
+  }
+
+  .footer__contact ul li:not(:last-child) {
+    margin-right: 24px;
+  }  
+
+.footer__tel {
+  margin-top: 50px;
+  font-size: 16px;
+  animation-duration: 1000ms;
+}  
+
+.footer__info {
+  padding: 10px 0;
+}
+
+.footer__info-max {
+  padding: 0;
+}
+
+}
