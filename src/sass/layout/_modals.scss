@@ -128,6 +128,8 @@
 
   transition: border-color 250ms linear;
 
+  color: var(--title-main-color);
+
   &:hover,
   &:focus {
     border-color: var(--reviews-small-dots-color);
@@ -173,6 +175,8 @@
 
   transition: border-color 250ms linear;
 
+  color: var(--reviews-small-dots-color);
+
   &:hover,
   &:focus {
     border-color: var(--title-main-color);
@@ -185,7 +189,7 @@
     font-size: 14px;
     letter-spacing: 0.01em;
 
-    color: rgba(117, 117, 117, 0.5);
+    color: rgba(212, 20, 67, 0.5);
   }
 }
 
