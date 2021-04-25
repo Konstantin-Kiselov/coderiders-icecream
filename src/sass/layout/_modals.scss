@@ -105,6 +105,10 @@
   font-size: 12px;
   letter-spacing: 0.01em;
   color: var(--base-color-light);
+
+  .form-modal__label:first-child {
+    margin-top: 30px;
+  }
 }
 
 .form-modal__field {
@@ -139,6 +143,8 @@
   transform: translateY(-50%);
 
   transition: fill 250ms linear;
+
+  fill: var(--footer-icons-color);
 
   .form-modal__input:hover + &,
   .form-modal__input:focus + & {
@@ -224,11 +230,12 @@
 
   .checkbox__input:checked + & {
     border-color: var(--title-main-color);
-    background-color: var(--title-main-color);
+    background-color: var(--reviews-home-color);
     background-image: url(//src/images/icons/vector.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-origin: border-box;
+    // fill: var(--base-color-light);
   }
 
   .checkbox__input:hover + &,
@@ -239,7 +246,7 @@
 
 .checkbox__agreement {
   text-decoration-line: underline;
-  color: var(--btn-hover-color);
+  color: var(--title-main-color);
 }
 
 .btn-modal-send {
@@ -273,7 +280,7 @@
   right: 8px;
 
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
 
   width: 30px;
   height: 30px;
