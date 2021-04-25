@@ -221,7 +221,7 @@
     top: -3px;
     right: -6px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--base-color-light);
     z-index: -1;
   }
 
@@ -317,7 +317,6 @@
   .hero__top {
     padding: 0;
     width: 100%;
-    outline: 1px solid red;
   }
 
   .hero__title {
