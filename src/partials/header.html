@@ -4,9 +4,18 @@
       <div class="header-logo">
         <a href="#" class="header-logo__link">
           <picture>
-            <source srcset="./images/logo/.png 1x" media="(max-width: 768px)" />
+            <source
+              srcset="
+                ./images/mobile/header/webp/logo.webp    1x,
+                ./images/mobile/header/webp/logo@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="./images/mobile/header/logo.png 1x, ./images/mobile/header/logo@2x.png 2x"
+            />
+            <img src="./images/mobile/header/logo.png" alt="logo" />
           </picture>
-          <img src="" alt="" />
         </a>
       </div>
       <nav class="navigation">
