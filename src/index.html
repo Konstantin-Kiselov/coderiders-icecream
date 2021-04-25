@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    
+
       <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
   </head>
@@ -30,16 +34,20 @@
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
       <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
       <include src="./partials/contact.html"></include>
-      
-      
+           
       
     </main>
 
     <include src="./partials/footer.html"></include>
+
     <include src="./partials/mobile-menu.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./customer-reviews.js"></script>
     <script src="./mobile-menu.js"></script>
     <script src="./index.js"></script>
   </body>
