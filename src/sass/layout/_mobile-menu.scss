@@ -13,10 +13,10 @@
   right: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #e17992;
+  background-color: var(--burger-main-color);
   padding-top: 60px;
 
-  // transform: translateX(100%);
+  transform: translateX(100%);
   transition: transform 250ms linear;
 
   @media screen and (min-width: 320px) {
@@ -46,14 +46,14 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.28;
-  border: 1px solid #e18298;
+  border: 1px solid var(--burger-secondary-color);
   color: #ffffff;
 
   transition: color 250ms linear;
 
   &:hover,
   &:focus {
-    color: #d41443;
+    color: var(--title-main-color);
   }
 }
 
@@ -66,7 +66,7 @@
 
   .mobile-menu__close-btn:hover &,
   .mobile-menu__close-btn:focus & {
-    fill: #d41443;
+    fill: var(--title-main-color);
   }
 }
 
@@ -89,8 +89,8 @@
   border-color: transparent;
   justify-content: center;
   align-items: center;
-  outline-color: #c7133e;
-  background-color: #fff;
+  outline-color: var(--reviews-small-dots-color);
+  background-color: var(--base-color-light);
   height: 44px;
   width: 209px;
 
@@ -107,7 +107,7 @@
   line-height: 1.3125;
   letter-spacing: 0;
   text-align: center;
-  color: #c7133e;
+  color: var(--reviews-small-dots-color);
   width: 91px;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -122,6 +122,6 @@
 .mobile-menu__btn-icon {
   height: 8px;
   width: 5px;
-  fill: #ffffff;
-  stroke: #c7133e;
+  fill: var(--base-color-light);
+  stroke: var(--reviews-small-dots-color);
 }
