@@ -13,7 +13,6 @@
     max-width: 480px;
     height: 502px;
     margin: 0 auto;
-    // z-index: -1;
   }
 }
 
@@ -23,7 +22,6 @@
   padding-top: 192px;
 }
 
-//---Заголовок Ice cream made with passion----
 .hero__title {
   width: 218px;
   z-index: 3;
@@ -99,6 +97,14 @@
   }
 }
 
+.hero__buttons {
+  margin-top: 19px;
+}
+
+.hero__buttons-item {
+  margin-right: 8px;
+}
+
 .hero__circle {
   position: absolute;
   z-index: 1;
@@ -119,14 +125,6 @@
   height: 410px;
 }
 
-.hero__buttons {
-  margin-top: 19px;
-}
-
-.hero__buttons-item {
-  margin-right: 8px;
-}
-
 .hero__text,
 .hero__milk,
 .hero__girl {
@@ -142,10 +140,11 @@
     height: 399px;
     padding-top: 94px;
   }
+
   .hero__top {
     padding: 0;
   }
-  //---Заголовок Ice cream made with passion----
+
   .hero__title {
     width: 162px;
     z-index: 3;
@@ -168,6 +167,7 @@
   .hero__girl {
     visibility: visible;
   }
+
   .hero__numbers {
     display: flex;
     flex-direction: column;
@@ -255,7 +255,6 @@
     left: 154px;
     display: flex;
     flex-direction: column;
-    // justify-content: flex-end;
     width: 114px;
   }
 
@@ -290,6 +289,7 @@
       cursor: pointer;
     }
   }
+
   .hero__milk {
     position: absolute;
     top: 245px;
@@ -300,6 +300,223 @@
     position: absolute;
     top: 266px;
     left: 566px;
+    z-index: 2;
+  }
+}
+
+// -------------------------Desktop----------------------
+@media screen and (min-width: 1280px) {
+  .hero .container {
+    position: relative;
+    z-index: 1;
+    min-width: 1200px;
+    height: 665px;
+    padding-top: 171px;
+  }
+
+  .hero__top {
+    padding: 0;
+  }
+
+  .hero__title {
+    width: 277px;
+    z-index: 3;
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    & span {
+      display: inline-block;
+      font-size: 58px;
+      line-height: 0.91;
+      color: #d41443;
+    }
+  }
+
+  .hero__text,
+  .hero__milk,
+  .hero__girl,
+  .hero__numbers {
+    visibility: visible;
+  }
+
+  .hero__numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero__numbers-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__cafes-list {
+    margin-bottom: 15px;
+  }
+
+  .hero__cafes-item,
+  .hero__trucks-item {
+    position: relative;
+    z-index: 5;
+  }
+
+  .hero__cafes-text,
+  .hero__trucks-text {
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.16;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  .hero__cafes-desc,
+  .hero__trucks-desc {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: right;
+    color: #ffffff;
+  }
+
+  .hero__cafes-text::before,
+  .hero__trucks-text::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -8px;
+    right: -10px;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: -1;
+  }
+
+  .hero__btn {
+    text-decoration: none;
+    border: 0;
+    z-index: 5;
+    border-radius: 20px;
+    background: #d41443;
+    color: #ffffff;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    min-width: 102px;
+    padding: 11px 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+    &:hover,
+    &:focus {
+      background: #c7133e;
+      cursor: pointer;
+    }
+  }
+
+  .hero__btn2 {
+    border: 0;
+    z-index: 4;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #d41443;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    min-width: 138px;
+    padding: 11px 20px;
+    align-items: center;
+    text-align: center;
+    // text-decoration: none;
+    margin-top: 25px;
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+      cursor: pointer;
+    }
+  }
+
+  .hero__circle {
+    position: absolute;
+    z-index: 1;
+    left: 475px;
+    top: 52px;
+    width: 538px;
+    height: 538px;
+    border-radius: 50%;
+    background: #ffa5ba;
+  }
+
+  .hero__icecream {
+    position: absolute;
+    z-index: 2;
+    left: 594px;
+    top: 108px;
+    width: 236px;
+    height: 557px;
+  }
+
+  .hero__text {
+    position: absolute;
+    top: 485px;
+    left: 295px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .hero__text-core {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .hero__text-btn {
+    height: 26px;
+    width: 26px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-size: contain;
+    background-image: url('../images/desktop/header/header-4.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/header/header-4@2x.png');
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+
+  .hero__milk {
+    position: absolute;
+    top: 429px;
+    left: 77px;
+  }
+
+  .hero__girl {
+    position: absolute;
+    top: 433px;
+    left: 878px;
     z-index: 2;
   }
 }
