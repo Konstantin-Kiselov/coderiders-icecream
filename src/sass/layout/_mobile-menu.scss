@@ -19,7 +19,7 @@
   transform: translateX(100%);
   transition: transform 250ms linear;
 
-  z-index: 100;
+  z-index: 52;
 
   @media screen and (min-width: 320px) {
     width: 250px;
@@ -102,7 +102,6 @@
 }
 
 .mobile-menu__btn-text {
-  font-family: DM Sans, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
