@@ -57,7 +57,6 @@
 .footer__list {
   display: flex;
   justify-content: flex-end;
-  align-items: stretch;
   flex-wrap: wrap;
   max-width: 230px;
   margin-left: auto;
@@ -65,7 +64,7 @@
 }
 
 .footer__contact ul li:not(:last-child) {
-  margin-right: 28px;
+  margin-right: 24px;
 }
 
 .footer__contact ul a {
@@ -74,8 +73,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   transition: background-color 250ms 
          cubic-bezier(0.4, 0, 0.2, 1),
          color 250ms 
@@ -171,6 +170,10 @@
     margin-bottom: 0;
    }
 
+   .footer__contact ul li:not(:last-child) {
+    margin-right: 30px;
+  } 
+
    .footer__tel {
       font-size: 14px;
    }
@@ -241,6 +244,10 @@
     text-transform: uppercase;
     max-width: 474px;
   }
+
+  .footer__contact ul li:not(:last-child) {
+    margin-right: 24px;
+  }  
 
 .footer__tel {
   margin-top: 50px;
