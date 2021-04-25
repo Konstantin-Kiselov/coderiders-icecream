@@ -1,4 +1,7 @@
-.layout-about {
+.about {
+  margin-left: auto;
+  margin-right: auto;
+
   background-size: 100%;
   background-position-y: 90%;
   background-repeat: no-repeat;
@@ -76,7 +79,6 @@
   }
 }
 .description {
-  margin-bottom: 113px;
   padding-top: 26px;
   @media screen and (min-width: 768px) {
     padding-top: 50px;
@@ -127,6 +129,15 @@
     color: var(--text-color);
     padding: 0;
     padding-bottom: 17px;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      width: 340px;
+      line-height: 1.76;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.92;
   }
 }
 
@@ -190,7 +201,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear;
   &:hover {
     background-color: var(--btn-hover-color);
   }
