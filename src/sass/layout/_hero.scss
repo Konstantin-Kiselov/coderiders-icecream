@@ -128,7 +128,8 @@
 }
 
 .hero__text,
-.hero__images {
+.hero__milk,
+.hero__girl {
   visibility: hidden;
 }
 
@@ -163,8 +164,8 @@
   }
 
   .hero__text,
-  .hero__images,
-  .hero__numbers {
+  .hero__milk,
+  .hero__girl {
     visibility: visible;
   }
   .hero__numbers {
@@ -223,7 +224,82 @@
     background-color: #fff;
     z-index: -1;
   }
+
   .hero__buttons {
     margin-top: 12px;
+  }
+
+  .hero__circle {
+    position: absolute;
+    z-index: 1;
+    left: 307px;
+    top: 31px;
+    width: 324px;
+    height: 322px;
+    border-radius: 50%;
+    background: #ffa5ba;
+  }
+
+  .hero__icecream {
+    position: absolute;
+    z-index: 2;
+    left: 378px;
+    top: 63px;
+    width: 143px;
+    height: 336px;
+  }
+
+  .hero__text {
+    position: absolute;
+    top: 292px;
+    left: 154px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-end;
+    width: 114px;
+  }
+
+  .hero__text-core {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 9px;
+  }
+
+  .hero__text-btn {
+    height: 18px;
+    width: 18px;
+
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-size: contain;
+    background-image: url('../images/tablet/header/header-4.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/header/header-4@2x.png');
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+  .hero__milk {
+    position: absolute;
+    top: 245px;
+    left: 34px;
+  }
+
+  .hero__girl {
+    position: absolute;
+    top: 266px;
+    left: 566px;
+    z-index: 2;
   }
 }

@@ -35,11 +35,11 @@
     <div class="hero__buttons">
       <ul class="hero__buttons-list list">
         <li class="hero__buttons-item">
-          <a href="https://www.w3docs.com/" class="hero__btn">Products</a>
+          <a href="#produsts" class="hero__btn">Products</a>
         </li>
 
         <li>
-          <a href="https://www.w3docs.com/" class="hero__btn2">How it’s made?</a>
+          <a href="#howitsmade" class="hero__btn2">How it’s made?</a>
         </li>
       </ul>
     </div>
@@ -93,24 +93,77 @@
 
     <!--Hero text and round link-->
     <div class="hero__text">
-      <ul class="hero__text-list list">
-        <li class="hero__text-item">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-          </p>
-        </li>
-        <li class="hero__text-item">img arrow right</li>
-      </ul>
+      <p class="hero__text-core">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button class="hero__text-btn" type="button"></button>
     </div>
 
     <!--Hero bottom images-->
-    <div class="hero__images">
-      <ul class="hero__images-list list">
-        <li class="hero__images-item">Milk img</li>
-        <li class="hero__images-item">Soooo Tasty img</li>
-      </ul>
+    <div class="hero__milk">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/header/webp/header-3.webp    1x,
+            ./images/desktop/header/webp/header-3@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/header/header-3.png    1x,
+            ./images/desktop/header/header-3@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/header/webp/header-3.webp    1x,
+            ./images/tablet/header/webp/header-3@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/tablet/header/header-3.png 1x, ./images/tablet/header/header-3@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img src="./images/tablet/header/header-3.png" alt="Fresh milk photo" />
+      </picture>
+    </div>
+    <div class="hero__girl">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/header/webp/header-2.webp    1x,
+            ./images/desktop/header/webp/header-2@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/header/header-2.png    1x,
+            ./images/desktop/header/header-2@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/header/webp/header-2.webp    1x,
+            ./images/tablet/header/webp/header-2@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/tablet/header/header-2.png 1x, ./images/tablet/header/header-2@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img src="./images/tablet/header/header-2.png" alt="Pretty girl with our ice cream" />
+      </picture>
     </div>
   </div>
 </section>
-<p id="products"></p>
