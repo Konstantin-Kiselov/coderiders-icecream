@@ -1,35 +1,28 @@
 .layout-about {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 125px;
-
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
   background-color: #fff5f6;
-  background-size: 100%;
-  background-position-y: 80%;
+
   background-image: url(../images/desktop/about/about-bg.png);
   @media screen and (min-device-pixel-ratio: 2) {
     background-image: url(../images/desktop/about/about-bg@2x.png);
   }
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+
   @media screen and (min-width: 768px) {
     background-image: none;
     padding-top: 130px;
-    background-image: none;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
-    background-position: 0 342px, 100% 342px;
-    background-size: auto 534px;
+
     background-image: url(../images/desktop/about/about-bg.png);
     @media screen and (min-device-pixel-ratio: 2) {
       background-image: url(../images/desktop/about/about-bg@2x.png);
     }
   }
 }
-.container-about {
-}
+
 .section__title {
   font-family: Titan One, sans-serif;
   font-style: normal;
@@ -49,6 +42,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 30px;
     line-height: 1.1333333333;
+    letter-spacing: 0.04em;
   }
 }
 .section__title-span {
@@ -66,8 +60,7 @@
   display: block;
   margin-top: 15px;
   padding-right: 40px;
-  margin-top: 0;
-  margin-bottom: 26px;
+  margin-top: 15;
   padding-left: 40px;
   padding-right: 40px;
 
