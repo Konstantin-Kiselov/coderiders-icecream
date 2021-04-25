@@ -6,10 +6,15 @@
   display: none;
 }
 
+.button__menu {
+  display: none;
+}
+.header {
+  background: var(--products-bg-color-1);
+}
+
 .header__wripper {
   padding-top: 6px;
-  background: #ffb8ca;
-  width: 100%;
 }
 
 .header__container {
@@ -39,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #d41443;
+  fill: var(--title-main-color);
 }
 
 .burger__btn {
@@ -68,18 +73,59 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: auto;
+    width: auto;
+  }
+
+  .button__menu {
+    width: 161px;
+    height: 44px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--base-color-light);
+    color: var(--title-main-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3125;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 250 ms linear;
+    &:hover {
+      background-color: var(--btn-hover-color);
+    }
+  }
+
+  .button__menu::after {
+    content: '';
+    background-image: url(../images/icons/arrow.svg);
+
+    display: block;
+    margin-left: 16px;
+    height: 10px;
+    width: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .button-btn {
+    margin-left: 30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header__wripper {
-    padding-left: 46px;
-    padding-right: 115px;
-  }
-
+@media screen and (min-width: 1280px) {
   .burger {
     display: none;
+  }
+
+  .button-btn {
+    margin-left: auto;
+  }
+
+  .container__button {
+    margin-left: auto;
   }
 
   .navigation__list {
@@ -94,27 +140,29 @@
   }
 
   .navigation__link {
-    font-family: DM Sans;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.3;
-
     display: flex;
     align-items: center;
-
-    color: #ffffff;
+    color: var(--base-color-light);
+    transition: 250 ms linear;
+    &:hover,
+    &:focus {
+      color: var(--title-main-color);
+    }
   }
 
   .accent {
-    color: #d41443;
+    color: var(--title-main-color);
   }
 
   .header__button {
     margin-left: auto;
   }
 
-  .header-logo {
-    margin-right: 110px;
+  .header-logo__link {
+    position: relative;
+    left: -70px;
   }
 }

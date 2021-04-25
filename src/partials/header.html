@@ -3,7 +3,19 @@
     <div class="header__container">
       <div class="header-logo">
         <a href="#" class="header-logo__link">
-          <img src="" alt="" />
+          <picture>
+            <source
+              srcset="
+                ./images/mobile/header/webp/logo.webp    1x,
+                ./images/mobile/header/webp/logo@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="./images/mobile/header/logo.png 1x, ./images/mobile/header/logo@2x.png 2x"
+            />
+            <img src="./images/mobile/header/logo.png" alt="logo" />
+          </picture>
         </a>
       </div>
       <nav class="navigation">
@@ -33,8 +45,8 @@
             </svg>
           </button>
         </div>
-        <div class="header__button">
-          <button></button>
+        <div class="button-btn">
+          <button class="button__menu">Buy now</button>
         </div>
       </div>
     </div>
