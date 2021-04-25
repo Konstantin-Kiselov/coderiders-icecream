@@ -1,19 +1,16 @@
 .footer {
-  background-color:#FFF5F6;
+  background-color: var(--secondary-bg-color);
+  padding-top: 66px;
 }
 
 .footer__box {
   padding-top: 56px;
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .footer__title {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: var(--secondary-font);
   margin-bottom: 17px;
   max-width: 234px;
   font-size: 18px;
@@ -22,7 +19,7 @@
   text-align: left;
   text-transform: uppercase;
 
-  color: #FFA5BA;
+  color: var(--title-secondary-color);
 
   animation-duration: 1000ms;
 }
@@ -30,9 +27,7 @@
 .footer__text {
   display: flex;
   flex-direction: column;
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: var(--secondary-font);
   margin-bottom: 43px;
   max-width: 234px;
   font-size: 34px;
@@ -41,7 +36,7 @@
   text-align: left;
   text-transform: uppercase;
 
-   color: #D41443;
+   color: var(--title-main-color);
 
    animation-duration: 1700ms;
 }
@@ -67,38 +62,34 @@
 
 .footer__contact ul a {
   border-radius: 50%;
-  background: #fea5bb;
+  background: var(--footer-icons-color);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 32px;
   height: 32px;
-  transition: background-color 250ms 
-         cubic-bezier(0.4, 0, 0.2, 1),
-         color 250ms 
-         cubic-bezier(0.4, 0, 0.2, 1);
-        
+  transition: background-color 250 ms linear; 
 }
 
 .footer__link:hover,
 .footer__link:focus {
-   background-color: #D41443;
-   color: #FFF;
+   background-color: var(--title-main-color);
+   color: var(--base-color-light);
   
 }
 
 .footer__icon {
-  fill: #fff;
+  fill: var(--base-color-light);
 }
 
 .footer__tel {
   display: block;
   margin-top: 46px;
-  font-family: DM Sans;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   letter-spacing: .02em;
-  color: #000;
+  color: var(--base-color-dark);
   font-size: 12px;
   text-align: right;
 
@@ -107,8 +98,7 @@
 
 .footer__tel-link {
   text-align: right;
-  color: #D41443;
-  
+  color: var(--title-main-color);
 }
 
 .footer__info {
@@ -118,20 +108,18 @@
   padding: 22px 0;
   letter-spacing: .02em;
   align-items: center;
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid var(--reviews-quotes-color);
+  max-width: 150px;
 }
 
-.footer__info-max {
-  display: none;
-}
-
-.footer__info-min {
-  font-family: DM Sans;
-  font-style: normal;
+.footer__info-text {
+  font-family: var(--main-font);
   font-weight: bold;
   font-size: 14px;
   line-height: 152%;
-  color: #907E82;
+  text-align: center;
+
+  color: var(--text-color);
 }
 
 /* tablet */
@@ -141,7 +129,6 @@
      padding-left: 36px;
      padding-right: 36px;
    }
-
 
    .footer__box {
      display: flex;
@@ -182,28 +169,17 @@
    }
 
    .footer__info {
-     padding: 0;
+     min-width: 276px;
+     padding-top: 29px;
+     padding-bottom: 18px;
    }
 
-   .footer__info-min {
-     display: none;
-   }
-
-   .footer__info-max {
-     display: initial;
-     font-family: DM Sans;
-     font-style: normal;
+   .footer__info-text {
      font-weight: bold;
      font-size: 14px;
      line-height: 186%;
      letter-spacing: 0.02em;
-     padding-top: 24px;
-     padding-bottom: 18px;
-
-
-     color: #907E82;
    }
-
 }   
 
 /* desktop */
@@ -224,26 +200,19 @@
   }
   
   .footer__title {
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
-    line-height: 34px;
+    line-height: 1.13;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     max-width: 474px;
     margin-bottom: 15px;
 
-    color: #FFA5BA;
     animation-duration: 1000ms;
   }
 
   .footer__text {
     flex-direction: row;
     justify-content: space-between;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 58px;
     line-height: 66px;
     letter-spacing: 0.06em;
@@ -251,15 +220,14 @@
     max-width: 474px;
     animation-duration: 1700ms;
     
-  
   }
 
-  .footer__contact ul li:not(:last-child) {
-    margin-right: 24px;
-  }  
+.footer__contact ul li:not(:last-child) {
+  margin-right: 24px;
+}  
 
 .footer__tel {
-  margin-top: 50px;
+  margin-top: 55px;
   font-size: 16px;
   animation-duration: 1000ms;
 }  
@@ -268,8 +236,7 @@
   padding: 10px 0;
 }
 
-.footer__info-max {
+.footer__info-text {
   padding: 0;
 }
-
 }
