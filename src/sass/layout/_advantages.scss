@@ -1,10 +1,10 @@
 .advantages {
     padding-top: 39px;
-    background-color: #FFF5F6;
+    background-color: var(--secondary-bg-color);
 }
 
 .advantages__item {
-    max-width: 250px;
+    max-width: 200px;
     
     &::before {
         display: block;
@@ -45,12 +45,13 @@
 }
 
 .advantages__title {
+    font-family: var(--secondary-font);
     margin-bottom: 16px;
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: var(--title-main-color);
 }
 
 .advantages__text {
@@ -76,7 +77,7 @@
     }
 
     .advantages__item {
-        max-width: 160px;
+        max-width: 170px;
         flex-basis: calc(100% / 3 - 60px);
         margin-left: 60px;
 
