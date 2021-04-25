@@ -5,7 +5,11 @@ $('.slide-reviews').slick({
     arrows: false,
     fade: true,
     asNavFor: '.slide-customer',
-    autoplay:true
+    
+  
+    autoplay: true,
+
+    infinite: false,
      });
    $('.slide-customer').slick({
    slidesToShow: 1,
@@ -13,5 +17,8 @@ $('.slide-reviews').slick({
    asNavFor: '.slide-reviews',
    dots: true,
    centerMode: true,
-   focusOnSelect: true
+   focusOnSelect: true,
+
+    infinite: false,
+    arrows: false,
    });
