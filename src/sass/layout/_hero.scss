@@ -1,7 +1,7 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffb8ca;
+  background-color: var(--products-bg-color-1);
   overflow: hidden;
 }
 
@@ -25,18 +25,18 @@
 .hero__title {
   width: 218px;
   z-index: 3;
-  font-family: Titan One;
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: normal;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--base-color-light);
   & span {
     font-size: 48px;
     line-height: 0.96;
-    color: #d41443;
+    color: var(--title-main-color);
   }
 }
 
@@ -55,9 +55,9 @@
   border: 0;
   z-index: 5;
   border-radius: 20px;
-  background: #d41443;
-  color: #ffffff;
-  font-family: DM Sans;
+  background: var(--title-main-color);
+  color: var(--base-color-light);
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
@@ -69,7 +69,7 @@
   cursor: pointer;
   &:hover,
   &:focus {
-    background: #c7133e;
+    background: var(--reviews-small-dots-color);
     transform: scale(1.1);
   }
 }
@@ -78,9 +78,9 @@
   border: 0;
   z-index: 4;
   border-radius: 20px;
-  background: #ffffff;
-  color: #d41443;
-  font-family: DM Sans;
+  background: var(--base-color-light);
+  color: var(--title-main-color);
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
@@ -93,7 +93,7 @@
   text-decoration: none;
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: var(--btn-hover-color);
   }
 }
 
@@ -113,7 +113,7 @@
   width: 346px;
   height: 344px;
   border-radius: 50%;
-  background: #ffa5ba;
+  background: var(--title-secondary-color);
 }
 
 .hero__icecream {
@@ -148,17 +148,17 @@
   .hero__title {
     width: 162px;
     z-index: 3;
-    font-family: Titan One;
+    font-family: var(--secondary-font);
     font-weight: 400;
     font-size: 22px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--base-color-light);
     & span {
       font-size: 34px;
       line-height: 0.91;
-      color: #d41443;
+      color: var(--title-main-color);
     }
   }
 
@@ -191,24 +191,24 @@
 
   .hero__cafes-text,
   .hero__trucks-text {
-    font-family: Titan One;
+    font-family: var(--secondary-font);
     font-weight: 400;
     font-size: 28px;
     line-height: 1.15;
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: var(--title-main-color);
   }
 
   .hero__cafes-desc,
   .hero__trucks-desc {
-    font-family: DM Sans;
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
     text-align: right;
-    color: #ffffff;
+    color: var(--base-color-light);
   }
 
   .hero__cafes-text::before,
@@ -237,7 +237,7 @@
     width: 324px;
     height: 322px;
     border-radius: 50%;
-    background: #ffa5ba;
+    background: var(--title-secondary-color);
   }
 
   .hero__icecream {
@@ -259,11 +259,11 @@
   }
 
   .hero__text-core {
-    font-family: DM Sans;
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
-    color: #ffffff;
+    color: var(--base-color-light);
     margin-bottom: 9px;
   }
 
@@ -309,7 +309,7 @@
   .hero .container {
     position: relative;
     z-index: 1;
-    min-width: 1200px;
+    min-width: 1090px;
     height: 665px;
     padding-top: 171px;
   }
@@ -321,18 +321,18 @@
   .hero__title {
     width: 277px;
     z-index: 3;
-    font-family: Titan One;
+    font-family: var(--secondary-font);
     font-weight: 400;
     font-size: 38px;
     line-height: 1.16;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--base-color-light);
     & span {
       display: inline-block;
       font-size: 58px;
       line-height: 0.91;
-      color: #d41443;
+      color: var(--title-main-color);
     }
   }
 
@@ -366,24 +366,24 @@
 
   .hero__cafes-text,
   .hero__trucks-text {
-    font-family: Titan One;
+    font-family: var(--secondary-font);
     font-weight: 400;
     font-size: 46px;
     line-height: 1.16;
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: var(--title-main-color);
   }
 
   .hero__cafes-desc,
   .hero__trucks-desc {
-    font-family: DM Sans;
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     text-align: right;
-    color: #ffffff;
+    color: var(--base-color-light);
   }
 
   .hero__cafes-text::before,
@@ -405,9 +405,9 @@
     border: 0;
     z-index: 5;
     border-radius: 20px;
-    background: #d41443;
-    color: #ffffff;
-    font-family: DM Sans;
+    background: var(--title-main-color);
+    color: var(--base-color-light);
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -419,7 +419,7 @@
     margin-top: 25px;
     &:hover,
     &:focus {
-      background: #c7133e;
+      background: var(--reviews-small-dots-color);
       cursor: pointer;
     }
   }
@@ -428,9 +428,9 @@
     border: 0;
     z-index: 4;
     border-radius: 20px;
-    background: #ffffff;
-    color: #d41443;
-    font-family: DM Sans;
+    background: var(--base-color-light);
+    color: var(--title-main-color);
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -442,7 +442,7 @@
     margin-top: 25px;
     &:hover,
     &:focus {
-      background-color: #ecebeb;
+      background-color: var(--btn-hover-color);
       cursor: pointer;
     }
   }
@@ -455,7 +455,7 @@
     width: 538px;
     height: 538px;
     border-radius: 50%;
-    background: #ffa5ba;
+    background: var(--title-secondary-color);
   }
 
   .hero__icecream {
@@ -477,11 +477,11 @@
   }
 
   .hero__text-core {
-    font-family: DM Sans;
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.43;
-    color: #ffffff;
+    color: var(--base-color-light);
     margin-bottom: 20px;
   }
 
