@@ -10,6 +10,14 @@
 @import './base/container';
 @import './utils/visually-hidden';
 
-@import './layout/hero';
+@import './utils/variables';
 
+@import './layout/mobile-menu';
+
+@import './layout/header';
+@import './layout/hero';
 @import './layout/advantages';
+@import './layout/about';
+@import './layout/contact';
+@import './layout/footer';
+
