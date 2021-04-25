@@ -4,7 +4,7 @@
  * Все паршалы подключаются сюда.
  */
 .example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #424242;
@@ -102,5 +102,301 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  z-index: -10;
+  background-color: #ffb8ca;
+  overflow: hidden;
+  height: 502px;
+}
+
+.hero__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 192px;
+}
+
+.hero__title {
+  width: 218px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__title span {
+  font-size: 48px;
+  line-height: 0.96;
+  color: #d41443;
+}
+
+.hero__buttons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__numbers {
+  visibility: hidden;
+}
+
+.hero__btn {
+  text-decoration: none;
+  border: 0;
+  border-radius: 20px;
+  background: #d41443;
+  color: #ffffff;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  min-width: 62px;
+  padding: 7px 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero__btn2 {
+  border: 0;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #d41443;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  min-width: 82px;
+  padding: 7px 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero__circle {
+  position: absolute;
+  z-index: -2;
+  left: 36px;
+  top: 83px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background: #ffa5ba;
+}
+
+.hero__icecream {
+  position: absolute;
+  z-index: -1;
+  left: 117px;
+  top: 92px;
+  width: 171px;
+  height: 410px;
+}
+
+.hero__buttons {
+  margin-top: 19px;
+}
+
+.hero__buttons-item {
+  margin-right: 8px;
+}
+
+.hero__text,
+.hero__images {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    min-width: 320px;
+  }
+}
+
+.advantages {
+  padding-top: 39px;
+  background-color: #FFF5F6;
+}
+
+.advantages__item {
+  max-width: 250px;
+}
+
+.advantages__item::before {
+  display: block;
+  content: '';
+  margin-bottom: 16px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__item_icon_milk::before {
+  background-image: url("../images/mobile/advantages/advantages-1.png");
+}
+
+.advantages__item_icon_apple::before {
+  background-image: url("../images/mobile/advantages/advantages-2.png");
+}
+
+.advantages__item_icon_candy::before {
+  background-image: url("../images/mobile/advantages/advantages-3.png");
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item_icon_milk::before {
+    background-image: url("../images/mobile/advantages/advantages-1@2x.png");
+  }
+  .advantages__item_icon_apple::before {
+    background-image: url("../images/mobile/advantages/advantages-2@2x.png");
+  }
+  .advantages__item_icon_candy::before {
+    background-image: url("../images/mobile/advantages/advantages-3@2x.png");
+  }
+}
+
+.advantages__title {
+  margin-bottom: 16px;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 66px;
+  }
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -60px;
+  }
+  .advantages__item {
+    max-width: 160px;
+    -ms-flex-preferred-size: calc(100% / 3 - 60px);
+        flex-basis: calc(100% / 3 - 60px);
+    margin-left: 60px;
+  }
+  .advantages__item::before {
+    margin-bottom: 36px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .advantages__item_icon_milk::before {
+    background-image: url("../images/tablet/advantages/advantages-1.png");
+  }
+  .advantages__item_icon_apple::before {
+    background-image: url("../images/tablet/advantages/advantages-2.png");
+  }
+  .advantages__item_icon_candy::before {
+    background-image: url("../images/tablet/advantages/advantages-3.png");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .advantages__item_icon_milk::before {
+    background-image: url("../images/tablet/advantages/advantages-1@2x.png");
+  }
+  .advantages__item_icon_apple::before {
+    background-image: url("../images/tablet/advantages/advantages-2@2x.png");
+  }
+  .advantages__item_icon_candy::before {
+    background-image: url("../images/tablet/advantages/advantages-3@2x.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    margin-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.15;
+    text-transform: none;
+  }
+  .advantages__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages {
+    padding-top: 39px;
+  }
+  .advantages__list {
+    margin-left: -30px;
+  }
+  .advantages__item {
+    max-width: 250px;
+    margin-left: 30px;
+  }
+  .advantages__item::before {
+    margin-bottom: 40px;
+  }
+  .advantages__item_icon_milk::before {
+    background-image: url("../images/desktop/advantages/advantages-1.png");
+  }
+  .advantages__item_icon_apple::before {
+    background-image: url("../images/desktop/advantages/advantages-2.png");
+  }
+  .advantages__item_icon_candy::before {
+    background-image: url("../images/desktop/advantages/advantages-3.png");
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .advantages__item_icon_milk::before {
+    background-image: url("../images/desktop/advantages/advantages-1@2x.png");
+  }
+  .advantages__item_icon_apple::before {
+    background-image: url("../images/desktop/advantages/advantages-2@2x.png");
+  }
+  .advantages__item_icon_candy::before {
+    background-image: url("../images/desktop/advantages/advantages-3@2x.png");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages__title {
+    margin-bottom: 15px;
+    font-size: 58px;
+    line-height: 1.14;
+  }
+  .advantages__text {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
 /*# sourceMappingURL=main.css.map */
