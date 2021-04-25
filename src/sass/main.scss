@@ -10,7 +10,16 @@
 @import './base/container';
 @import './utils/visually-hidden';
 
+@import './utils/variables';
+
+@import './layout/mobile-menu';
+
 @import './layout/header';
 @import './layout/hero';
-@import './layout/about';
 @import './layout/product';
+@import './layout/advantages';
+@import './layout/about';
+@import './layout/contact';
+@import './layout/footer';
+
+
