@@ -5,11 +5,12 @@
 .header__button {
   display: none;
 }
+.header {
+  background: #ffb8ca;
+}
 
 .header__wripper {
   padding-top: 6px;
-  background: #ffb8ca;
-  width: 100%;
 }
 
 .header__container {
@@ -51,6 +52,41 @@
   cursor: pointer;
 }
 
+.button__menu {
+  width: 161px;
+  height: 44px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #d41443;
+  font-weight: 700;
+  font-family: DM Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.3125;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: #ecebeb;
+  }
+}
+
+.button__menu::after {
+  content: '';
+  background-image: url(../images/icons/arrow.svg);
+
+  display: block;
+  margin-left: 16px;
+  height: 10px;
+  width: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media screen and (min-width: 768px) {
   .header__button {
     display: block;
@@ -73,7 +109,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .header__wripper {
+  .header {
     padding-left: 46px;
     padding-right: 115px;
   }
