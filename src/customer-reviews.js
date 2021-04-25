@@ -5,11 +5,9 @@ $('.slide-reviews').slick({
     arrows: false,
     fade: true,
     asNavFor: '.slide-customer',
-    
-  
     autoplay: true,
 
-    infinite: false,
+    infinite: true,
      });
    $('.slide-customer').slick({
    slidesToShow: 1,

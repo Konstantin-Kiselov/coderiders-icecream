@@ -1,5 +1,5 @@
 .customer-reviews {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       padding-bottom: 128px;
     }
@@ -22,7 +22,7 @@
   margin: 0 auto;
   outline: 1px solid rgb(36, 211, 124);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       width: 280px;
       padding-bottom: 20px;
@@ -48,7 +48,7 @@
   margin: 0 auto;
   outline: 1px solid rgb(36, 211, 124);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       width: 280px;
       padding-top: 22px;
@@ -80,7 +80,7 @@
 .slide-reviews__photo {
   margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       margin-bottom: 30px;
     }
@@ -101,10 +101,10 @@
 
 .slide-reviews__thumb {
   margin: 0;
-  background-color: rgb(250, 250, 250);
+  background-color: var(--reviews-bg-color);
   outline: 1px solid red;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       padding: 43px 60px 26px 60px;
     }
@@ -137,7 +137,7 @@
   z-index: 410;
   outline: 1px solid red;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       font-size: 12px;
       line-height: 2.55;
@@ -169,7 +169,7 @@
   left: 0;
   z-index: -400;
   //outline: 1px solid rgb(19, 85, 172);
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       background-image: repeating-linear-gradient(
         to bottom,
@@ -255,7 +255,7 @@
 
   margin-bottom: 35px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       margin-left: 40px;
       margin-right: 40px;
@@ -290,6 +290,14 @@
 .slide-customer .slick-dots {
   display: flex;
   justify-content: center;
+  color: #d9d9d9;
+  margin: 0 auto;
+  padding-left: 45px;
+}
+
+.slide-customer .slick-dots {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -297,12 +305,12 @@
   visibility: hidden;
 }
 
-.slick-active::marker {
+.slide-reviews .slick-active::marker {
   color: #c7133e;
 }
 
 /*.slide-customer .slick-active::marker {
-  background-image: url(../images/icons/home.png);
+  background-image: url(../images/icons/home.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 12px;
