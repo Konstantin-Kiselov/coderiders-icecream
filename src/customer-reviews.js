@@ -6,7 +6,6 @@ $('.slide-reviews').slick({
     fade: true,
     asNavFor: '.slide-customer',
     autoplay: true,
-
     infinite: true,
      });
    $('.slide-customer').slick({
@@ -16,7 +15,5 @@ $('.slide-reviews').slick({
    dots: true,
    centerMode: true,
    focusOnSelect: true,
-
-    infinite: false,
     arrows: false,
    });
