@@ -4,8 +4,8 @@
   
 }
 .product {
-  padding-top: 60px;
-  padding-bottom: 50px;
+  padding-top: 121px;
+  padding-bottom: 98px;
 }
 .product__leabel {
   font-family: var(--secondary-font);
@@ -133,12 +133,19 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .product {
+  padding-top: 122px;
+  padding-bottom: 112px;
+}
   .conteiner {
     width: 768px;
     margin: 0 auto;
     padding-left: 34px;
     padding-right: 34px;
   }
+  .product__item:not(:last-child) {
+  margin-bottom: 0px;
+}
   .product__leabel {
     font-family: var(--secondary-font);
     font-size: 20px;
@@ -220,6 +227,13 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .product {
+  padding-top: 127px;
+  padding-bottom: 119px;
+}
+.product__item:not(:last-child) {
+  margin-bottom: 0px;
+}
   .conteiner {
     width: 1090px;
     margin: 0 auto;
