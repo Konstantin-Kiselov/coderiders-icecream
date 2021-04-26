@@ -304,3 +304,71 @@
     fill: var(--base-color-light);
   }
 }
+
+// about
+.backdrop-is-hidden .modal-about {
+  transform: translate(-50%, -50%) scale(0.2) rotate(360deg);
+}
+
+.modal-about {
+  min-width: 450px;
+  min-height: 609px;
+  padding: 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 500ms linear;
+
+  background: var(--burger-main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  margin-top: 50px;
+
+  @media screen and (max-width: 480px) {
+    min-width: 90vw;
+    min-height: 80vh;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 528px;
+    min-height: 581px;
+    margin-top: 0;
+  }
+}
+
+.modal-about__text {
+  color: var(--base-color-light);
+  margin-bottom: 20px;
+
+  line-height: 1.5;
+  font-size: 20px;
+
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.15;
+    font-size: 20px;
+  }
+}
+
+.modal-about__text-description {
+  line-height: 1.5;
+
+  color: var(--base-color-light);
+}
+
+.photo-cow {
+  width: 50px;
+}

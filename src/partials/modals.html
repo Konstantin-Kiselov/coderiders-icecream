@@ -1,3 +1,4 @@
+<!-- buy now -->
 <div class="backdrop backdrop-is-hidden" data-modal>
     <div class="modal">
         <button class="btn-modal" data-modal-close>
@@ -46,6 +47,40 @@
     </div>
 </div>
 
+
+<!-- about -->
+<div class="backdrop backdrop-is-hidden" data-modal-about>
+    <div class="modal-about">
+        <button class="btn-modal" data-modal-about-close>
+            <svg class="btn-modal__icon" width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <p class="modal-about__text">How it`s made</p>
+        <picture aria-label="milk and cow">
+            <source srcset="
+                      ./images/desktop/about/webp/about-1.webp    1x,
+                      ./images/desktop/about/webp/about-1@2x.webp 2x
+                    " media="(min-width: 1200px)" type="image/webp" />
+            <source srcset="./images/desktop/about/about-1.png 1x, ./images/desktop/about/about-1@2x.png 2x"
+                media="(min-width: 1200px)" />
+            <source srcset="
+                      ./images/tablet/about/webp/about-1.webp    1x,
+                      ./images/tablet/about/webp/about-1@2x.webp 2x
+                    " media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./images/tablet/about/about-1.png 1x, ./images/tablet/about/about-1@2x.png 2x"
+                media="(min-width: 768px)" />
+            <source srcset="
+                      ./images/mobile/about/webp/about-1.webp    1x,
+                      ./images/mobile/about/webp/about-1@2x.webp 2x
+                    " media="(max-width: 768px)" type="image/webp" />
+            <source srcset="./images/mobile/about/about-1.png 1x, ./images/mobile/about/about-1@2x.png 2x"
+                media="(max-width: 768px)" />
+            <img class="photo-cow" src="./images/desktop/about/about-1.png" alt="milk and cow" />
+        </picture>
+        <p class="modal-about__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempore impedit voluptas, mollitia, cum qui laborum id veniam pariatur eos voluptatem aut facilis a dolore magni deleniti esse illo eum iure ratione doloribus quas dolor. Ipsa consequuntur at mollitia molestias ipsam officia, dolor itaque, hic nemo, possimus voluptatum dignissimos iure!</p>
+    </div>
+</div>
 
 
 <script src="./modal.js"></script>
