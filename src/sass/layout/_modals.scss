@@ -76,7 +76,7 @@
   text-align: center;
 
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 1280px) {
     line-height: 1.15;
@@ -363,6 +363,8 @@
     line-height: 1.15;
     font-size: 40px;
   }
+
+  margin-bottom: 20px;
 }
 
 .modal-about__text-description {
@@ -402,7 +404,7 @@
   @media screen and (min-width: 1280px) {
     width: 90%;
     min-height: 581px;
-    margin-top: 50px;
+    margin-top: 200px;
   }
 }
 
