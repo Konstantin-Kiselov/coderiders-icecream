@@ -22,9 +22,10 @@
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 10;
 
-  width: 100%;
+  width: 100vw;
 }
 
 .header__container {
@@ -74,8 +75,9 @@
 
   .header__wripper {
     padding-top: 37px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-bottom: 21px;
+    //padding-left: 34px;
+    //padding-right: 34px;
   }
 
   .container__button {
