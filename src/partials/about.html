@@ -1,5 +1,5 @@
-<section class="layout-about" id="aboutus">
-  <div class="container container-about">
+<section class="about" id="aboutus">
+  <div class="container">
     <p class="about__title">TRADITIONS AND LOVE</p>
     <h2 class="about__header">HOW IT'S MADE?</h2>
 
@@ -11,12 +11,12 @@
               ./images/desktop/about/webp/about-1.webp    1x,
               ./images/desktop/about/webp/about-1@2x.webp 2x
             "
-            media="(min-width: 1200px)"
+            media="(min-width: 1280px)"
             type="image/webp"
           />
           <source
             srcset="./images/desktop/about/about-1.png 1x, ./images/desktop/about/about-1@2x.png 2x"
-            media="(min-width: 1200px)"
+            media="(min-width: 1280px)"
           />
           <source
             srcset="
@@ -42,7 +42,11 @@
             srcset="./images/mobile/about/about-1.png 1x, ./images/mobile/about/about-1@2x.png 2x"
             media="(max-width: 768px)"
           />
-          <img class="foto-cow" src="./images/desktop/about/about-1.png" alt="milk and cow" />
+          <img
+            class="description__img-img"
+            src="./images/desktop/about/about-1.png"
+            alt="glass of milk and cow"
+          />
         </picture>
       </div>
       <div class="description__text">
@@ -59,7 +63,7 @@
           <p class="description__text-item item--grey">Aliquam erat volutpat. Aenean accumsan.</p>
         </div>
         <div class="about__btn">
-          <button class="button">Read more</button>
+          <button class="button" data-modal-about-open>Read more</button>
         </div>
       </div>
     </div>

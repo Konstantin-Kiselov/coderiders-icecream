@@ -6,7 +6,7 @@
 }
 
 // ------------------------mobile----------------------
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero .container {
     position: relative;
     min-width: 320px;
@@ -70,7 +70,6 @@
   &:hover,
   &:focus {
     background: var(--reviews-small-dots-color);
-    transform: scale(1.1);
   }
 }
 
@@ -136,7 +135,7 @@
   .hero .container {
     position: relative;
     z-index: 1;
-    min-width: 768px;
+    min-width: 740px;
     height: 399px;
     padding-top: 94px;
   }
@@ -164,7 +163,8 @@
 
   .hero__text,
   .hero__milk,
-  .hero__girl {
+  .hero__girl,
+  .hero__numbers {
     visibility: visible;
   }
 
@@ -221,7 +221,7 @@
     top: -3px;
     right: -6px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--base-color-light);
     z-index: -1;
   }
 
@@ -293,7 +293,7 @@
   .hero__milk {
     position: absolute;
     top: 245px;
-    left: 34px;
+    left: 24px;
   }
 
   .hero__girl {
@@ -316,6 +316,7 @@
 
   .hero__top {
     padding: 0;
+    width: 100%;
   }
 
   .hero__title {
@@ -400,6 +401,10 @@
     z-index: -1;
   }
 
+  .hero__buttons-item {
+    margin-right: 15px;
+  }
+
   .hero__btn {
     text-decoration: none;
     border: 0;
@@ -417,6 +422,7 @@
     align-items: center;
     text-align: center;
     margin-top: 25px;
+
     &:hover,
     &:focus {
       background: var(--reviews-small-dots-color);
@@ -438,7 +444,6 @@
     padding: 11px 20px;
     align-items: center;
     text-align: center;
-    // text-decoration: none;
     margin-top: 25px;
     &:hover,
     &:focus {
@@ -450,7 +455,7 @@
   .hero__circle {
     position: absolute;
     z-index: 1;
-    left: 475px;
+    left: 395px;
     top: 52px;
     width: 538px;
     height: 538px;
@@ -461,7 +466,7 @@
   .hero__icecream {
     position: absolute;
     z-index: 2;
-    left: 594px;
+    left: 514px;
     top: 108px;
     width: 236px;
     height: 557px;
@@ -470,7 +475,7 @@
   .hero__text {
     position: absolute;
     top: 485px;
-    left: 295px;
+    left: 215px;
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -510,13 +515,13 @@
   .hero__milk {
     position: absolute;
     top: 429px;
-    left: 77px;
+    left: -40px;
   }
 
   .hero__girl {
     position: absolute;
     top: 433px;
-    left: 878px;
+    left: 798px;
     z-index: 2;
   }
 }
