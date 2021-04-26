@@ -143,6 +143,9 @@
     padding-left: 34px;
     padding-right: 34px;
   }
+  .product__item:not(:last-child) {
+  margin-bottom: 0px;
+}
   .product__leabel {
     font-family: var(--secondary-font);
     font-size: 20px;
@@ -227,6 +230,9 @@
   .product {
   padding-top: 127px;
   padding-bottom: 119px;
+}
+.product__item:not(:last-child) {
+  margin-bottom: 0px;
 }
   .conteiner {
     width: 1090px;
