@@ -1,6 +1,7 @@
 .contacts {
   background-image: linear-gradient(to top, #fff5f6 93%, #ffffff 15%, #ffffff 15%);
   padding-top: 43px;
+  padding-bottom: 113px;
 
   font-family: DM Sans;
   font-weight: 500;
@@ -17,13 +18,14 @@
 }
 
 .contact-list {
+  padding-bottom: 54px;
   &__item {
     text-align: left;
     width: 220px;
     padding: 43px 20px;
     margin-bottom: 20px;
 
-    background: var(--secondary-bg-color);
+    background: var(--base-color-light);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
@@ -128,7 +130,7 @@
 .contact-list__mail:hover,
 .contact-list__tel:focus,
 .contact-list__mail:focus {
-  color: darkblue;
+  color: var(--title-main-color);
 }
 
 .contacts-button__map,
@@ -200,6 +202,7 @@
   .contacts {
     background-image: linear-gradient(to top, #fff5f6 82%, #ffffff 15%, #ffffff 15%);
     padding-top: 43px;
+    padding-bottom: 165px;
 
     font-size: 14px;
   }
@@ -241,7 +244,7 @@
 @media screen and (min-width: 1280px) {
   .contacts {
     // background-image: url(../images/desktop/contact/contact-bg.png),
-    // linear-gradient(to top, #fff5f6 82%, #ffffff 15%, #ffffff 15%);
+    //   linear-gradient(to top, #fff5f6 82%, #ffffff 15%, #ffffff 15%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
