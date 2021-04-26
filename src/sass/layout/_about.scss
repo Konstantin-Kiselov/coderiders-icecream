@@ -3,7 +3,7 @@
   margin-right: auto;
 
   background-size: 100%;
-  background-position-y: 90%;
+  background-position-y: 130%;
   background-repeat: no-repeat;
 
   background-color: var(--secondary-bg-color);
@@ -131,13 +131,14 @@
     padding-bottom: 17px;
     @media screen and (min-width: 768px) {
       font-size: 14px;
-      width: 340px;
+
       line-height: 1.76;
     }
   }
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.92;
+    width: 463px;
   }
 }
 
