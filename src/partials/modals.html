@@ -1,0 +1,200 @@
+<!-- buy now -->
+<div class="backdrop backdrop-is-hidden" data-modal>
+    <div class="modal">
+        <button class="btn-modal" data-modal-close>
+            <svg class="btn-modal__icon" width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <p class="modal__text">Leave your details, we will call you back</p>
+        <form action="#" class="form-modal">
+            <label class="form-modal__label">Name
+                <span class="form-modal__field">
+                    <input class="form-modal__input" type="text" name="name" autocomplete="off">
+                    <svg class="form-modal__icon" width="18" height="18">
+                        <use href="./images/sprite.svg#person-black"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="form-modal__label">Telephone
+                <span class="form-modal__field">
+                    <input class="form-modal__input" type="tel" name="tel" autocomplete="off">
+                    <svg class="form-modal__icon" width="18" height="18">
+                        <use href="./images/sprite.svg#phone-black"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="form-modal__label">Email address
+                <span class="form-modal__field">
+                    <input class="form-modal__input" type="email" name="email" autocomplete="off">
+                    <svg class="form-modal__icon" width="18" height="18">
+                        <use href="./images/sprite.svg#email-black"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="form-modal__label form-modal__comment">Comment
+                <textarea class="form-modal__textarea" name="comment" id="comment"
+                    placeholder="Enter text"></textarea>
+            </label>
+
+            <label class="checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="policy">
+                <span class="checkbox__icon"></span>
+                I agree to the newsletter and accept&nbsp;<a href="" class="checkbox__agreement">Agreement conditions</a>
+            </label>
+            <button type="submit" class="btn__mobile-menu">Send</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- about -->
+<div class="backdrop backdrop-is-hidden" data-modal-about>
+    <div class="modal-about">
+        <button class="btn-modal" data-modal-about-close>
+            <svg class="btn-modal__icon" width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <p class="modal-about__text">How it`s made</p>
+        <picture aria-label="milk and cow">
+            <source srcset="
+                      ./images/desktop/about/webp/about-1.webp    1x,
+                      ./images/desktop/about/webp/about-1@2x.webp 2x
+                    " media="(min-width: 1200px)" type="image/webp" />
+            <source srcset="./images/desktop/about/about-1.png 1x, ./images/desktop/about/about-1@2x.png 2x"
+                media="(min-width: 1200px)" />
+            <source srcset="
+                      ./images/tablet/about/webp/about-1.webp    1x,
+                      ./images/tablet/about/webp/about-1@2x.webp 2x
+                    " media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./images/tablet/about/about-1.png 1x, ./images/tablet/about/about-1@2x.png 2x"
+                media="(min-width: 768px)" />
+            <source srcset="
+                      ./images/mobile/about/webp/about-1.webp    1x,
+                      ./images/mobile/about/webp/about-1@2x.webp 2x
+                    " media="(max-width: 768px)" type="image/webp" />
+            <source srcset="./images/mobile/about/about-1.png 1x, ./images/mobile/about/about-1@2x.png 2x"
+                media="(max-width: 768px)" />
+            <img class="photo-cow" src="./images/desktop/about/about-1.png" alt="milk and cow" />
+        </picture>
+        <p class="modal-about__text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis similique praesentium amet fugiat cumque, voluptate delectus blanditiis odit at ea magnam repellat totam incidunt veniam quas accusantium! Labore hic iusto consequuntur illo tempore, culpa ullam quas cumque deleniti ea ratione fugiat eaque aspernatur soluta dolore quis debitis animi laudantium quibusdam sed quos laboriosam! Deserunt saepe nostrum atque. Dolorum sit blanditiis reiciendis modi sunt voluptas eius, laboriosam quibusdam quos laudantium perspiciatis molestiae at neque nobis aspernatur corrupti ullam porro libero! Consequatur rerum sunt praesentium facere totam suscipit amet id dolor cumque distinctio nostrum aliquid magnam, deleniti accusantium culpa. Odit, blanditiis doloremque!</p>
+    </div>
+</div>
+
+<!-- Our locations -->
+<div class="backdrop backdrop-is-hidden backdrop-locations" data-modal-locations>
+    <div class="modal-about modal-locations">
+        <button class="btn-modal" data-modal-locations-close>
+            <svg class="btn-modal__icon" width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <p class="modal-about__text">Our Locations</p>
+
+        <div id="map" class="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cLvCr3T5a5T6xgUg2zuxkSRx1j2IJyex" width="100%"
+                height="480">
+            </iframe>
+        </div>
+
+        <ul class="list contact-list contact-list-locations">
+            <li class="contact-list__item">
+                <div class="contact-list__agency-wraper cafe">
+                    <p class="contact-list__agency">CAFE</p>
+                </div>
+                <h3 class="contact-list__city">Chicago</h3>
+                <p class="contact-list__schedule">Monday - Friday</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
+                <p class="contact-list__schedule">Saturday - Sunday</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
+                <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+            <li class="list contact-list__item">
+                <div class="contact-list__agency-wraper foodstruck">
+                    <p class="contact-list__agency">FOODTRUCK</p>
+                </div>
+                <h3 class="contact-list__city">Los Angeles</h3>
+                <p class="contact-list__schedule">Monday - Friday</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
+                <p class="contact-list__schedule">Saturday - Sunday</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
+                <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+            <li class="list contact-list__item">
+                <div class="contact-list__agency-wraper cafe">
+                    <p class="contact-list__agency">CAFE</p>
+                </div>
+                <h3 class="contact-list__city">New York</h3>
+                <p class="contact-list__schedule">Monday - Friday</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
+                <p class="contact-list__schedule">Saturday - Sunday</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
+                <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Franchise -->
+<div class="backdrop backdrop-is-hidden backdrop-locations" data-modal-franchise>
+    <div class="modal-about modal-locations">
+        <button class="btn-modal" data-modal-franchise-close>
+            <svg class="btn-modal__icon" width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <p class="modal-about__text">Franchise</p>
+
+        <div id="map" class="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CQzbzQOw0SNHL4zyb2tz47nZW2VyPtWL" width="100%"
+                height="480">
+            </iframe>
+        </div>
+
+        <ul class="list contact-list contact-list-locations">
+            <li class="contact-list__item">
+                <div class="contact-list__agency-wraper cafe">
+                    <p class="contact-list__agency">CAFE</p>
+                </div>
+                <h3 class="contact-list__city">Kyiv</h3>
+                <p class="contact-list__schedule">Monday - Friday</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
+                <p class="contact-list__schedule">Saturday - Sunday</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
+                <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+            <li class="list contact-list__item">
+                <div class="contact-list__agency-wraper foodstruck">
+                    <p class="contact-list__agency">FOODTRUCK</p>
+                </div>
+                <h3 class="contact-list__city">Kharkov</h3>
+                <p class="contact-list__schedule">Monday - Friday</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
+                <p class="contact-list__schedule">Saturday - Sunday</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
+                <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+            <li class="list contact-list__item">
+                <div class="contact-list__agency-wraper cafe">
+                    <p class="contact-list__agency">CAFE</p>
+                </div>
+                <h3 class="contact-list__city">Lviv</h3>
+                <p class="contact-list__schedule">Monday - Friday</p>
+                <p class="contact-list__time"><time>06:00</time> AM - <time>10:00</time> PM</p>
+                <p class="contact-list__schedule">Saturday - Sunday</p>
+                <p class="contact-list__time"><time>08:00</time> AM - <time>16:00</time> PM</p>
+                <a class="contact-list__tel link-style" href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a class="contact-list__mail link-style" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="./modal.js"></script>

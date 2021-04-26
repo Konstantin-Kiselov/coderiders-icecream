@@ -1,0 +1,296 @@
+.customer-reviews {
+  @media screen and (max-width: 767px) {
+    & {
+      padding-bottom: 43px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-bottom: 60px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      padding-bottom: 66px;
+    }
+  }
+}
+
+.slide-reviews {
+  margin: 0 auto;
+  //outline: 1px solid rgb(36, 211, 124);
+
+  @media screen and (max-width: 767px) {
+    & {
+      width: 280px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 620px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      width: 926px;
+    }
+  }
+}
+
+.slide-customer {
+  margin: 0 auto;
+  //outline: 1px solid rgb(36, 211, 124);
+
+  @media screen and (max-width: 767px) {
+    & {
+      width: 280px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 620px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      width: 926px;
+    }
+  }
+}
+
+.slide-reviews__photo {
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    & {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.slide-reviews__thumb {
+  margin: 0;
+  background-color: var(--reviews-bg-color);
+  //outline: 1px solid red;
+
+  @media screen and (max-width: 767px) {
+    & {
+      margin-bottom: 25px;
+      padding: 43px 60px 26px 60px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 24px;
+      padding: 30px 38px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      padding: 47px 50px 40px 50px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.slide-reviews__descrip {
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
+  position: relative;
+  z-index: 410;
+  //outline: 1px solid red;
+
+  @media screen and (max-width: 767px) {
+    & {
+      font-size: 12px;
+      line-height: 2.55;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      font-size: 14px;
+      line-height: 2.16;
+      padding: 0 27px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      font-size: 16px;
+      line-height: 1.86;
+      padding: 0 37px;
+    }
+  }
+}
+
+.slide-reviews__descrip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -400;
+  //outline: 1px solid rgb(19, 85, 172);
+  @media screen and (max-width: 767px) {
+    & {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgb(250, 250, 250),
+        rgb(250, 250, 250) 29px,
+        rgb(225, 225, 225) 29px,
+        rgb(225, 225, 225) 30px
+      );
+      width: 180px;
+      height: 240px;
+      top: 0;
+      left: -7px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgb(250, 250, 250),
+        rgb(250, 250, 250) 29px,
+        rgb(225, 225, 225) 29px,
+        rgb(225, 225, 225) 30px
+      );
+      width: 524px;
+      height: 115px;
+      top: 0;
+      left: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgb(250, 250, 250),
+        rgb(250, 250, 250) 28px,
+        rgb(225, 225, 225) 28px,
+        rgb(225, 225, 225) 29px
+      );
+      width: 822px;
+      height: 80px;
+      top: 0;
+      left: 7px;
+    }
+  }
+}
+
+.slide-reviews__descrip::after {
+  content: '';
+  background-image: url(../images/icons/quotes.svg);
+  background-repeat: no-repeat;
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  z-index: -100;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #c7133e;
+}
+
+.slide-customer__name {
+  font-weight: 500;
+  line-height: 1.86;
+  text-align: center;
+  margin-bottom: 21px;
+  //outline: 1px solid rgb(112, 36, 211);
+
+  @media screen and (max-width: 1279px) {
+    & {
+      margin-left: 40px;
+      margin-right: 40px;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      font-size: 20px;
+    }
+  }
+}
+
+// Стили пагинации
+// Пагинация под отзывом
+.slide-reviews .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.slide-reviews .slick-dots button {
+  background: var(--reviews-big-dots-color);
+  color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+  margin: 5px;
+  outline: none;
+  padding: 0;
+}
+
+.slide-reviews .slick-active button {
+  background: var(--reviews-small-dots-color);
+}
+
+// Пагинация под именем
+
+.slide-customer .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.slide-customer .slick-dots button {
+  background: var(--reviews-big-dots-color);
+  color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin: 9px;
+  outline: none;
+}
+
+.slide-customer .slick-active button {
+  background-image: url(../images/icons/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 0%;
+  background-color: transparent;
+}
