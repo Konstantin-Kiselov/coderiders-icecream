@@ -334,14 +334,14 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 450px;
+    min-width: 450px;
     min-height: 609px;
   }
 
   @media screen and (min-width: 1280px) {
     min-width: 528px;
     min-height: 581px;
-    margin-top: 0;
+    margin-top: 300px;
   }
 }
 
@@ -350,7 +350,7 @@
   margin-bottom: 20px;
 
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 25px;
 
   text-align: center;
 
@@ -359,7 +359,7 @@
 
   @media screen and (min-width: 1280px) {
     line-height: 1.15;
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 
@@ -367,8 +367,20 @@
   line-height: 1.5;
 
   color: var(--base-color-light);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 25px;
+  }
 }
 
 .photo-cow {
   width: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 80px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 80%;
+  }
 }
