@@ -15,6 +15,16 @@
 
 .header__wripper {
   padding-top: 6px;
+
+  background: var(--products-bg-color-1);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  width: 100%;
 }
 
 .header__container {
@@ -63,7 +73,7 @@
   }
 
   .header__wripper {
-    padding-top: 38px;
+    padding-top: 37px;
     padding-left: 34px;
     padding-right: 34px;
   }
@@ -91,7 +101,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 250 ms linear;
+    transition: 250ms linear;
     &:hover {
       background-color: var(--btn-hover-color);
     }
@@ -146,7 +156,7 @@
     display: flex;
     align-items: center;
     color: var(--base-color-light);
-    transition: 250 ms linear;
+    transition: 250ms linear;
     &:hover,
     &:focus {
       color: var(--title-main-color);
