@@ -1,52 +1,55 @@
 <header class="header">
   <div class="header__wripper container">
-    <div class="header__container">
-      <div class="header-logo">
-        <a href="#" class="header-logo__link">
-          <picture>
-            <source
-              srcset="
-                ./images/mobile/header/webp/logo.webp    1x,
-                ./images/mobile/header/webp/logo@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              srcset="./images/mobile/header/logo.png 1x, ./images/mobile/header/logo@2x.png 2x"
-            />
-            <img src="./images/mobile/header/logo.png" alt="logo" />
-          </picture>
-        </a>
-      </div>
-      <nav class="navigation">
-        <ul class="navigation__list list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link link accent">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#aboutus" class="navigation__link link">About us</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#howitsmade" class="navigation__link link">How it’s made?</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#ourproducts" class="navigation__link link">Our products</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#contact" class="navigation__link link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="container__button">
-        <div class="burger">
-          <button class="burger__btn" type="button" data-menu-button>
-            <svg class="burger__svg" width="20" height="20">
-              <use href="./images/sprite.svg#burger"></use>
-            </svg>
-          </button>
+    
+      <div class="header__container">
+        <div class="header-logo">
+          <a href="#" class="header-logo__link animate__backInLeft">
+            <picture>
+              <source
+                srcset="
+                  ./images/mobile/header/webp/logo.webp    1x,
+                  ./images/mobile/header/webp/logo@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="./images/mobile/header/logo.png 1x, ./images/mobile/header/logo@2x.png 2x"
+              />
+              <img src="./images/mobile/header/logo.png" alt="logo" />
+            </picture>
+          </a>
         </div>
-        <div class="button-btn">
-          <button class="button__menu" data-modal-open>Buy now</button>
+
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link link accent animate__fadeIn">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#aboutus" class="navigation__link link animate__fadeIn">About us</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#howitsmade" class="navigation__link link animate__fadeIn">How it’s made?</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#ourproducts" class="navigation__link link animate__fadeIn">Our products</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#contact" class="navigation__link link animate__fadeIn">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container__button">
+          <div class="burger">
+            <button class="burger__btn" type="button" data-menu-button>
+              <svg class="burger__svg" width="20" height="20">
+                <use href="./images/sprite.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="button-btn">
+            <button class="button__menu animate__backInRight" data-modal-open>Buy now</button>
+          </div>
         </div>
       </div>
     </div>
