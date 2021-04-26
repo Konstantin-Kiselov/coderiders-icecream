@@ -386,3 +386,35 @@
     width: 80%;
   }
 }
+
+// Our Locations
+.modal-locations {
+  @media screen and (max-width: 480px) {
+    min-width: 90vw;
+    min-height: 80vh;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 90%;
+    min-height: 581px;
+    margin-top: 50px;
+  }
+}
+
+.contact-list-locations {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.map {
+  margin-bottom: 20px;
+}
