@@ -19,15 +19,6 @@
   background: var(--products-bg-color-1);
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-
-  width: 100%;
-}
-
 .header__container {
   display: flex;
   align-items: center;
@@ -135,6 +126,15 @@
 
   .button-btn {
     margin-left: auto;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
   }
 
   .container__button {
