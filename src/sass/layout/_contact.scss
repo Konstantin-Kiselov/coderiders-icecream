@@ -23,7 +23,6 @@
     padding: 43px 20px;
     margin-bottom: 20px;
 
-    background: var(--secondary-bg-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
@@ -128,7 +127,7 @@
 .contact-list__mail:hover,
 .contact-list__tel:focus,
 .contact-list__mail:focus {
-  color: darkblue;
+  color: --title-main-color;
 }
 
 .contacts-button__map,
