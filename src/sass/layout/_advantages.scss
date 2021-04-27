@@ -5,7 +5,7 @@
 }
 
 .advantages__item {
-    max-width: 200px;
+    max-width: 230px;
     
     &::before {
         display: block;
@@ -78,7 +78,7 @@
     }
 
     .advantages__item {
-        max-width: 170px;
+        max-width: 180px;
         flex-basis: calc(100% / 3 - 60px);
         margin-left: 60px;
 
@@ -142,7 +142,7 @@
     }
 
     .advantages__item {
-        max-width: 250px;
+        max-width: 330px;
         margin-left: 30px;
 
         &::before {
