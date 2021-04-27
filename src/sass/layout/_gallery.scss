@@ -3,19 +3,16 @@
 
   @media screen and (max-width: 767px) {
     padding-top: 97px;
-    padding-bottom: 80px;
     background: linear-gradient(180deg, rgba(255, 245, 246, 1) 48%, rgba(255, 255, 255, 1) 40%);
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 140px;
-    padding-bottom: 121px;
     background: linear-gradient(180deg, rgba(255, 245, 246, 1) 47%, rgba(255, 255, 255, 1) 40%);
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 139px;
-    padding-bottom: 123px;
     background: linear-gradient(180deg, rgba(255, 245, 246, 1) 46%, rgba(255, 255, 255, 1) 40%);
   }
 }
