@@ -1,7 +1,6 @@
 .container {
   padding-left: 20px;
   padding-right: 20px;
-  
 }
 .product {
   padding-top: 121px;
@@ -36,13 +35,13 @@
   margin-bottom: 130px;
 }
 .product__item:first-child {
-  background: #FFB8CA;
+  background: #ffb8ca;
   position: relative;
   &::before {
     content: '';
     background-image: url(../images/mobile/products/products-1.png);
     @media screen and (min-device-pixel-ratio: 2) {
-       background-image: url(../images/mobile/products/products-1@2x.png);
+      background-image: url(../images/mobile/products/products-1@2x.png);
     }
     width: 249px;
     height: 252px;
@@ -58,7 +57,7 @@
     content: '';
     background-image: url(../images/mobile/products/products-2.png);
     @media screen and (min-device-pixel-ratio: 2) {
-       background-image: url(../images/mobile/products/products-2@2x.png);
+      background-image: url(../images/mobile/products/products-2@2x.png);
     }
     width: 249px;
     height: 252px;
@@ -74,7 +73,7 @@
     content: '';
     background-image: url(../images/mobile/products/products-3.png);
     @media screen and (min-device-pixel-ratio: 2) {
-       background-image: url(../images/mobile/products/products-3@2x.png);
+      background-image: url(../images/mobile/products/products-3@2x.png);
     }
     width: 249px;
     height: 252px;
@@ -134,9 +133,9 @@
 }
 @media screen and (min-width: 768px) {
   .product {
-  padding-top: 122px;
-  padding-bottom: 112px;
-}
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
   .conteiner {
     width: 768px;
     margin: 0 auto;
@@ -144,8 +143,8 @@
     padding-right: 34px;
   }
   .product__item:not(:last-child) {
-  margin-bottom: 0px;
-}
+    margin-bottom: 0px;
+  }
   .product__leabel {
     font-family: var(--secondary-font);
     font-size: 20px;
@@ -180,8 +179,8 @@
       content: '';
       background-image: url(../images/tablet/products/products-1.png);
       @media screen and (min-device-pixel-ratio: 2) {
-       background-image: url(../images/tablet/products/products-1@2x.png);
-    }
+        background-image: url(../images/tablet/products/products-1@2x.png);
+      }
       width: 220px;
       height: 226px;
       position: absolute;
@@ -192,8 +191,8 @@
       content: '';
       background-image: url(../images/tablet/products/products-2.png);
       @media screen and (min-device-pixel-ratio: 2) {
-       background-image: url(../images/tablet/products/products-2@2x.png);
-    }
+        background-image: url(../images/tablet/products/products-2@2x.png);
+      }
       width: 220px;
       height: 233px;
       position: absolute;
@@ -204,8 +203,8 @@
       content: '';
       background-image: url(../images/tablet/products/products-3.png);
       @media screen and (min-device-pixel-ratio: 2) {
-       background-image: url(../images/tablet/products/products-3@2x.png);
-    }
+        background-image: url(../images/tablet/products/products-3@2x.png);
+      }
       width: 220px;
       height: 224px;
       position: absolute;
@@ -228,12 +227,10 @@
 }
 @media screen and (min-width: 1280px) {
   .product {
-  padding-top: 127px;
-  padding-bottom: 119px;
-}
-.product__item:not(:last-child) {
-  margin-bottom: 0px;
-}
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+
   .conteiner {
     width: 1090px;
     margin: 0 auto;
@@ -257,8 +254,8 @@
       content: '';
       background-image: url(../images/desktop/products/products-1.png);
       @media screen and (min-device-pixel-ratio: 2) {
-       background-image: url(../images/desktop/products/products-1@2x.png);
-    }
+        background-image: url(../images/desktop/products/products-1@2x.png);
+      }
       width: 335px;
       height: 335px;
       position: absolute;
@@ -269,8 +266,8 @@
       content: '';
       background-image: url(../images/desktop/products/products-2.png);
       @media screen and (min-device-pixel-ratio: 2) {
-       background-image: url(../images/desktop/products/products-2@2x.png);
-    }
+        background-image: url(../images/desktop/products/products-2@2x.png);
+      }
       width: 335px;
       height: 335px;
       position: absolute;
@@ -281,8 +278,8 @@
       content: '';
       background-image: url(../images/desktop/products/products-3.png);
       @media screen and (min-device-pixel-ratio: 2) {
-       background-image: url(../images/desktop/products/products-3@2x.png);
-    }
+        background-image: url(../images/desktop/products/products-3@2x.png);
+      }
       width: 335px;
       height: 335px;
       position: absolute;
