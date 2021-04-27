@@ -456,8 +456,8 @@
   .hero__circle {
     position: absolute;
     z-index: 1;
-    left: 395px;
-    top: 52px;
+    left: 335px;
+    top: 58px;
     width: 538px;
     height: 538px;
     border-radius: 50%;
@@ -467,16 +467,17 @@
   .hero__icecream {
     position: absolute;
     z-index: 2;
-    left: 514px;
+    left: 474px;
     top: 108px;
     width: 236px;
     height: 557px;
+    animation-duration: 1000ms;
   }
 
   .hero__text {
     position: absolute;
     top: 485px;
-    left: 215px;
+    left: 175px;
     display: flex;
     flex-direction: column;
     width: 200px;
