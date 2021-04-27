@@ -1,6 +1,5 @@
 .gallery {
   // background: linear-gradient(180deg, rgba(255, 245, 246, 1) 45%, rgba(255, 255, 255, 1) 40%);
- 
 
   @media screen and (max-width: 767px) {
     padding-top: 97px;
@@ -8,7 +7,7 @@
     background: linear-gradient(180deg, rgba(255, 245, 246, 1) 48%, rgba(255, 255, 255, 1) 40%);
   }
 
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 140px;
     padding-bottom: 121px;
     background: linear-gradient(180deg, rgba(255, 245, 246, 1) 47%, rgba(255, 255, 255, 1) 40%);
@@ -46,11 +45,9 @@
   margin-top: 15px;
 }
 
-
-
 @media screen and (min-width: 320px) {
   .gallery__item:not(:last-child) {
-  margin-right: 2px;
+    margin-right: 2px;
   }
 
   // .gallery__wrapper img:not(:last-child) {
@@ -58,11 +55,11 @@
   // }
 
   .gallery__img {
-  margin-bottom: 2px;
+    margin-bottom: 2px;
   }
 
-    .gallery__item--two {
-  margin-top: 15px;
+  .gallery__item--two {
+    margin-top: 15px;
   }
 
   .gallery__item--four {
@@ -74,36 +71,31 @@
   }
 }
 
-
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .gallery__item:not(:last-child) {
-  margin-right: 4px;
+    margin-right: 4px;
   }
 
-    .gallery__img {
+  .gallery__img {
     margin-bottom: 4px;
-    }
+  }
 
-    .gallery__item--two {
+  .gallery__item--two {
     margin-top: 25px;
-    }
+  }
 
-    .gallery__item--four {
-      margin-top: 45px;
-    }
+  .gallery__item--four {
+    margin-top: 45px;
+  }
 
-    .gallery__item--six {
-      margin-top: 15px;
-    }
+  .gallery__item--six {
+    margin-top: 15px;
+  }
 }
 
-
-
 @media screen and (min-width: 1280px) {
-
   .gallery__item:not(:last-child) {
-  margin-right: 7px;
+    margin-right: 7px;
   }
 
   // .gallery__pic:nth-child(even) {
@@ -111,11 +103,11 @@
   // }
 
   .gallery__img {
-  margin-bottom: 7px;
+    margin-bottom: 7px;
   }
 
   .gallery__item--two {
-  margin-top: 25px;
+    margin-top: 25px;
   }
 
   .gallery__item--four {
@@ -129,9 +121,9 @@
 
 .gallery__img {
   transition: transform 250ms linear;
-  
+
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
