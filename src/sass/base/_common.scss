@@ -1,6 +1,10 @@
 body {
   background-color: var(--primary-bg-color);
   font-family: var(--main-font);
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,
