@@ -15,8 +15,13 @@
 
 .header__wripper {
   padding-top: 6px;
-
-  background: var(--products-bg-color-1);
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  width: 100vw;
 }
 
 .header__container {
@@ -67,8 +72,6 @@
   .header__wripper {
     padding-top: 37px;
     padding-bottom: 21px;
-    //padding-left: 34px;
-    //padding-right: 34px;
   }
 
   .container__button {
@@ -135,6 +138,10 @@
     z-index: 10;
     transform: translateX(-50%);
     width: 100vw;
+  }
+
+  .header__wripper {
+    background: var(--products-bg-color-1);
   }
 
   .container__button {
