@@ -90,6 +90,7 @@
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: 250ms linear;
   &:hover,
   &:focus {
     background-color: var(--btn-hover-color);
@@ -423,6 +424,7 @@
     align-items: center;
     text-align: center;
     margin-top: 25px;
+    transition: 250ms linear;
 
     &:hover,
     &:focus {
