@@ -1,6 +1,6 @@
 .contacts {
   background-image: linear-gradient(to top, #fff5f6 93%, #ffffff 15%, #ffffff 15%);
-  padding-top: 43px;
+  padding-top: 80px;
   padding-bottom: 113px;
 
   font-family: DM Sans;
@@ -157,11 +157,11 @@
 
   color: var(--base-color-light);
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    box-shadow: 0px 0px 2px 2px #ffffff inset;
+    background-color: var(--reviews-small-dots-color);
   }
 }
 
@@ -172,7 +172,7 @@
 
   color: var(--contacts-btn-color);
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -197,7 +197,7 @@
 @media screen and (min-width: 768px) {
   .contacts {
     background-image: linear-gradient(to top, #fff5f6 82%, #ffffff 15%, #ffffff 15%);
-    padding-top: 43px;
+    padding-top: 131px;
     padding-bottom: 165px;
 
     font-size: 14px;
@@ -253,6 +253,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    padding-top: 118px;
+    background-position-y: 35%;
 
     font-size: 16px;
   }
