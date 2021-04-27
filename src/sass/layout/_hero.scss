@@ -446,6 +446,7 @@
     align-items: center;
     text-align: center;
     margin-top: 25px;
+
     &:hover,
     &:focus {
       background-color: var(--btn-hover-color);
@@ -499,6 +500,7 @@
     border: none;
     outline: none;
     background-size: contain;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-image: url('../images/desktop/header/header-4.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -511,6 +513,7 @@
     &:hover,
     &:focus {
       cursor: pointer;
+      transform: scale(1.02);
     }
   }
 
@@ -518,6 +521,11 @@
     position: absolute;
     top: 429px;
     left: -40px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+    }
   }
 
   .hero__girl {
@@ -525,5 +533,11 @@
     top: 433px;
     left: 798px;
     z-index: 2;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+    }
   }
 }
