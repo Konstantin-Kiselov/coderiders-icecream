@@ -52,8 +52,8 @@
 
 .mobile-menu__close-icon {
   fill: currentColor;
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
 
   transition: fill 250ms linear;
 
@@ -65,11 +65,11 @@
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 23px;
+  top: 13px;
   right: 28px;
   background-color: transparent;
   border: none;
-  padding: 0;
+  padding: 10px 0 10px 0;
   cursor: pointer;
 }
 
