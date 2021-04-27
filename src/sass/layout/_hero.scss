@@ -90,6 +90,7 @@
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: 250ms linear;
   &:hover,
   &:focus {
     background-color: var(--btn-hover-color);
@@ -102,6 +103,7 @@
 
 .hero__buttons-item {
   margin-right: 8px;
+  animation-duration: 1500ms;
 }
 
 .hero__circle {
@@ -422,6 +424,7 @@
     align-items: center;
     text-align: center;
     margin-top: 25px;
+    transition: 250ms linear;
 
     &:hover,
     &:focus {
@@ -445,6 +448,7 @@
     align-items: center;
     text-align: center;
     margin-top: 25px;
+
     &:hover,
     &:focus {
       background-color: var(--btn-hover-color);
@@ -455,8 +459,8 @@
   .hero__circle {
     position: absolute;
     z-index: 1;
-    left: 395px;
-    top: 52px;
+    left: 335px;
+    top: 58px;
     width: 538px;
     height: 538px;
     border-radius: 50%;
@@ -466,16 +470,17 @@
   .hero__icecream {
     position: absolute;
     z-index: 2;
-    left: 514px;
+    left: 474px;
     top: 108px;
     width: 236px;
     height: 557px;
+    animation-duration: 1000ms;
   }
 
   .hero__text {
     position: absolute;
     top: 485px;
-    left: 215px;
+    left: 175px;
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -497,6 +502,7 @@
     border: none;
     outline: none;
     background-size: contain;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-image: url('../images/desktop/header/header-4.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -509,6 +515,7 @@
     &:hover,
     &:focus {
       cursor: pointer;
+      transform: scale(1.02);
     }
   }
 
@@ -516,6 +523,11 @@
     position: absolute;
     top: 429px;
     left: -40px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+    }
   }
 
   .hero__girl {
@@ -523,5 +535,11 @@
     top: 433px;
     left: 798px;
     z-index: 2;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+    }
   }
 }

@@ -37,7 +37,7 @@
   padding: 40px;
 
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 500ms linear;
@@ -318,7 +318,7 @@
   padding: 40px;
 
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 500ms linear;
@@ -378,19 +378,23 @@
 }
 
 .photo-cow {
-  width: 50px;
+  width: 90px;
+  float: left;
+  margin: 7px 7px 7px 0;
 
   @media screen and (min-width: 768px) {
-    width: 80px;
+    width: 120px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 80%;
+    width: 200px;
   }
 }
 
 // Our Locations
 .modal-locations {
+  margin-top: 50px;
+
   @media screen and (max-width: 480px) {
     min-width: 90vw;
     min-height: 80vh;
