@@ -1,53 +1,77 @@
 <section class="gallery">
-  <div class="gallery__wrapper container">
+  <div class="gallery__wrapper">
     <h2 class="gallery__title visually-hidden">Gallery</h2>
-    <!-- <picture class="gallery__pic">
-      <source
-      srcset="./images/desktop/gallery/webp/gallery.webp 1x, ./images/desktop/gallery/webp/gallery@2x.webp 2x"
-      media="(min-width: 1280px)" type="image/webp">
-      <source
-      srcset="./images/desktop/gallery/gallery.png 1x, ./images/desktop/gallery/gallery@2x.png 2x"
-       media="(min-width: 1280px)">
-
-      <source
-        srcset="./images/tablet/gallery/webp/gallery.webp 1x, ./images/tablet/gallery/webp/gallery@2x.webp 2x"
-        media="(min-width: 768px)" type="image/webp">
-      <source
-        srcset="./images/tablet/gallery/gallery.png 1x, ./images/tablet/gallery/gallery@2x.png 2x"
-        media="(min-width: 768px)">
-
-      <source
-        srcset="./images/mobile/gallery/webp/gallery.webp 1x, ./images/mobile/gallery/webp/gallery@2x.webp 2x"
-        media="(min-width: 480px)" type="image/webp">
-      <source
-        srcset="./images/mobile/gallery/gallery.png 1x, ./images/mobile/gallery/gallery@2x.png 2x"
-        media="(min-width: 480px)">
-
-        <img class="gallery__img animate__heartBeat" src="./images/mobile/gallery/gallery.png" alt="gallery of ice-cream and clients">
-    </picture> -->
-  
     <ul class="gallery__list list">
       <li class="gallery__item">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream1.png" alt="" width="138" height="138">
+        <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic1.webp 1x, ./images/gallery/webp/pic1@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic1.jpg 1x, ./images/gallery/pic1@2x.jpg 2x">
+          <img class="gallery__img" src="./images/gallery/pic1.jpg" alt="Picture 1" width="138" height="138">
+        </picture>
       </li>
+
+      <li class="gallery__item gallery__item--two">
+        <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic2.webp 1x, ./images/gallery/webp/pic2@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic2.jpg 1x, ./images/gallery/pic2@2x.jpg 2x">
+          <img class="gallery__img" src="./images/gallery/pic2.jpg" alt="Picture 2" width="138" height="138">
+        </picture>
+      
+        <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic3.webp 1x, ./images/gallery/webp/pic3@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic3.jpg 1x, ./images/gallery/pic3@2x.jpg 2x">
+          <img class="gallery__img" src="./images/gallery/pic3.jpg" alt="Picture 3" width="138" height="138">
+        </picture>
+      </li>
+      
       <li class="gallery__item">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream2.png" alt="" width="138" height="138">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream3.png" alt="" width="138" height="138">
+        <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic4.webp 1x, ./images/gallery/webp/pic4@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic4.jpg 1x, ./images/gallery/pic4@2x.jpg 2x">
+          <img class="gallery__img" src="./images/gallery/pic4.jpg" alt="Picture 4" width="238" height="238">
+        </picture>
+      
+          <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic5.webp 1x, ./images/gallery/webp/pic5@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic5.jpg 1x, ./images/gallery/pic5@2x.jpg 2x">
+          <img class="gallery__img gallery__img--five" src="./images/gallery/pic5.jpg" alt="Picture 5" width="138" height="138">
+        </picture>
       </li>
-      <li class="gallery__item">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream4.png" alt="" width="238" height="238">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream5.png" alt="" width="138" height="138">
-      </li>
+
       <li class="gallery__item gallery__item--four">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream6.png" alt="" width="138" height="138">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream7.png" alt="" width="138" height="138">
+        <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic6.webp 1x, ./images/gallery/webp/pic6@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic6.jpg 1x, ./images/gallery/pic6@2x.jpg 2x">
+          <img class="gallery__img" src="./images/gallery/pic6.jpg" alt="Picture 6" width="138" height="138">
+        </picture>
+
+        <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic7.webp 1x, ./images/gallery/webp/pic7@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic7.jpg 1x, ./images/gallery/pic7@2x.jpg 2x">
+          <img class="gallery__img" src="./images/gallery/pic7.jpg" alt="Picture 7" width="138" height="138">
+        </picture>
       </li>
+      
       <li class="gallery__item">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream8.png" alt="" width="138" height="138">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream9.png" alt="" width="138" height="138">
+        <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic8.webp 1x, ./images/gallery/webp/pic8@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic8.jpg 1x, ./images/gallery/pic8@2x.jpg 2x">
+          <img class="gallery__img" src="./images/gallery/pic8.jpg" alt="Picture 8" width="138" height="138">
+        </picture>
+
+        <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic9.webp 1x, ./images/gallery/webp/pic9@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic9.jpg 1x, ./images/gallery/pic9@2x.jpg 2x">
+          <img class="gallery__img" src="./images/gallery/pic9.jpg" alt="Picture 9" width="138" height="138">
+        </picture>
       </li>
-      <li class="gallery__item">
-        <img class="gallery__img" src="./images/gallery-img/desktop/icecream10.png" alt="" width="138" height="138">
+
+      <li class="gallery__item gallery__item--six">
+        <picture class="gallery__pic">
+          <source class="gallery__img" srcset="./images/gallery/webp/pic10.webp 1x, ./images/gallery/webp/pic10@2x.webp 2x" type="image/webp">
+          <source class="gallery__img" srcset="./images/gallery/pic10.jpg 1x, ./images/gallery/pic10@2x.jpg 2x">
+          <img class="gallery__img" src="./images/gallery/pic10.jpg" alt="Picture 10" width="138" height="138">
+        </picture>
       </li>
     </ul>
   </div>
