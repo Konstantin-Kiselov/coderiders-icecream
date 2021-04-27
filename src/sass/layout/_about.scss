@@ -41,6 +41,8 @@
   letter-spacing: 0;
   color: var(--title-secondary-color);
 
+  animation-duration: 1000ms;
+
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.1538461538;
@@ -69,6 +71,8 @@
   margin-top: 15;
   padding-left: 40px;
   padding-right: 40px;
+
+  animation-duration: 1000ms;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -215,6 +219,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 250ms linear;
+  animation-duration: 1000ms;
   &:hover {
     background-color: var(--btn-hover-color);
   }
