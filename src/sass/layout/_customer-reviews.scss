@@ -1,19 +1,19 @@
 .customer-reviews {
   @media screen and (max-width: 767px) {
     & {
-      padding-bottom: 43px;
+      padding-top: 80px;
     }
   }
 
   @media screen and (min-width: 768px) {
     & {
-      padding-bottom: 60px;
+      padding-top: 121px;
     }
   }
 
   @media screen and (min-width: 1280px) {
     & {
-      padding-bottom: 66px;
+      padding-top: 123px;
     }
   }
 }
@@ -214,9 +214,9 @@
   z-index: -100;
 }
 
-.slick-dots li.slick-active button:before {
+/*.slick-dots li.slick-active button:before {
   color: #c7133e;
-}
+}*/
 
 .slide-customer__name {
   font-weight: 500;
@@ -259,6 +259,8 @@
   margin: 5px;
   outline: none;
   padding: 0;
+
+  cursor: pointer;
 }
 
 .slide-reviews .slick-active button {
@@ -283,6 +285,8 @@
   width: 12px;
   margin: 9px;
   outline: none;
+
+  cursor: pointer;
 }
 
 .slide-customer .slick-active button {
