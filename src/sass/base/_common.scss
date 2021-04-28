@@ -2,7 +2,8 @@ body {
   background-color: var(--primary-bg-color);
   font-family: var(--main-font);
 
-  &.modal-open {
+  &.modal-open,
+  &.lock {
     overflow: hidden;
   }
 }
